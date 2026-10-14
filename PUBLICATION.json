@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-14",
+  "public_demo": true,
+  "data_policy": "synthetic fixtures only; no original scientific repository history or unpublished collaborator data",
+  "identifiers": "local identity, workspace paths and session references replaced",
+  "omitted": [
+    "research trajectories",
+    "research summary files",
+    "credentials",
+    "private configuration",
+    "screenshots",
+    "original git history"
+  ],
+  "source_changes": [
+    "generic demo package identifiers",
+    "generic material guardrail wording"
+  ],
+  "numeric_logic_changes": false,
+  "evidence_scope": "sanitized historical real-model records and offline checks; see evidence/README.md",
+  "runtime_source": "https://github.com/AgnesAI-Labs/agnes-harness/tree/57d0c34b33527294042b7ab8a60d7c7c934e932e"
+}

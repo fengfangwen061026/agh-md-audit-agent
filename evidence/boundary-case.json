@@ -1,0 +1,93 @@
+{
+  "category": "boundary",
+  "execution": "extracted from actual Agnes normal run; not a separate model session",
+  "source": "real_agnes/revised-verified.json",
+  "session_id": "demo-session-04925999e7a2",
+  "pmf": [
+    {
+      "step": "pmf_qc",
+      "condition": "DEMO_B_c1",
+      "status": "quality_gate_passed_with_scope_limits",
+      "well_depth_kcal_mol": 1.4,
+      "well_depth_ci95_kcal_mol": [
+        1.2,
+        1.5999999999999999
+      ],
+      "bootstrap": {
+        "requested": 20,
+        "valid": 20,
+        "unit": "synthetic test blocks",
+        "seed": 20261013
+      },
+      "window_overlap": {
+        "minimum": 0.1,
+        "minimum_required": 0.03,
+        "below_threshold": []
+      },
+      "standard_state_correction_applied": false,
+      "interpretation": "local PMF QC is available; standard-state correction is not applied",
+      "evidence_file": "PMF/DEMO_B_c1/summary.json"
+    },
+    {
+      "step": "pmf_qc",
+      "condition": "DEMO_A_c1",
+      "status": "quality_gate_passed_with_scope_limits",
+      "well_depth_kcal_mol": 1.2,
+      "well_depth_ci95_kcal_mol": [
+        1,
+        1.4
+      ],
+      "bootstrap": {
+        "requested": 20,
+        "valid": 20,
+        "unit": "synthetic test blocks",
+        "seed": 20261013
+      },
+      "window_overlap": {
+        "minimum": 0.1,
+        "minimum_required": 0.03,
+        "below_threshold": []
+      },
+      "standard_state_correction_applied": false,
+      "interpretation": "local PMF QC is available; standard-state correction is not applied",
+      "evidence_file": "PMF/DEMO_A_c1/summary.json"
+    }
+  ],
+  "md": [
+    {
+      "step": "md_replica_contrast",
+      "comparison": "DEMO_A-minus-DEMO_B",
+      "metric": "demo_contact_count",
+      "n_independent_replicas_per_group": 3,
+      "delta_mean": -0.2,
+      "ci95": [
+        -1,
+        0.6
+      ],
+      "verdict": "ci_crosses_zero_not_resolved",
+      "unit": "count",
+      "evidence_file": "MD/contrasts.csv",
+      "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+    },
+    {
+      "step": "md_replica_contrast",
+      "comparison": "DEMO_A-minus-DEMO_B",
+      "metric": "demo_bridge_count",
+      "n_independent_replicas_per_group": 3,
+      "delta_mean": 0,
+      "ci95": [
+        -0.5,
+        0.5
+      ],
+      "verdict": "ci_crosses_zero_not_resolved",
+      "unit": "count",
+      "evidence_file": "MD/contrasts.csv",
+      "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+    }
+  ],
+  "expected": [
+    "standard-state correction not applied",
+    "CI crosses zero; direction unresolved"
+  ],
+  "passed": true
+}

@@ -1,0 +1,14 @@
+{
+  "well_depth_kcal_mol": 1.4,
+  "well_depth_ci95_kcal_mol": [
+    1.2,
+    1.5999999999999999
+  ],
+  "bootstrap_requested": 20,
+  "bootstrap_valid": 20,
+  "bootstrap_unit": "synthetic test blocks",
+  "seed": 20261013,
+  "min_neighbor_overlap": 0.1,
+  "neighbor_overlaps_below_0p03": [],
+  "standard_state_correction": false
+}

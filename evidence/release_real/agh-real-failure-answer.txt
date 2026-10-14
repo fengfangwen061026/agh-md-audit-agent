@@ -1,0 +1,90 @@
+# 科学证据审计结果
+
+**第一段**：团队构造的合成测试数据——本工作区全部为程序测试/验证数据，不是科研测量或模拟结果；数值只能用于合成输入校验、配置化工具执行与不确定性/错误处理测试。
+
+## 证据状态（evidence_inventory）
+
+- `tool_version`: `0.2.0`
+- `config_version`: `1.0`
+- 状态：`evidence_needs_attention`
+- `dataset`: TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS
+- `dataset_id`: `team-synthetic-agh-video-test-v1`
+- `raw_trajectories_included`: false
+- PMF 条件声明数：`9`
+- `files_expected`: 15
+- `files_present`: 14
+- 缺失文件：`AI/audit.json`
+- 无效文件：无
+- 支持声明：合成输入校验、配置化工具执行、不确定性与错误处理
+- 阻断声明：不能从合成测试值做任何科学推断；不支持宏观相分离、因果机制或可迁移设计规则
+
+## PMF 审计结果
+
+### DEMO_A_c1
+
+- 工具状态：`quality_gate_passed_with_scope_limits`
+- 井深：`1.2 kcal/mol`
+- 95% 置信区间：`[1, 1.4] kcal/mol`
+- Bootstrap 请求：`20`
+- Bootstrap 有效：`20`
+- Bootstrap 单位：`synthetic test blocks`
+- 种子：`20261013`
+- 窗口重叠最小值：`0.1`
+- 窗口重叠最低要求：`0.03`
+- 低于阈值窗口：无
+- 标准态修正：`false`，未应用
+- 解释：local PMF QC is available; standard-state correction is not applied
+- 证据文件：`PMF/DEMO_A_c1/summary.json`
+
+### DEMO_B_c1
+
+- 工具状态：`quality_gate_passed_with_scope_limits`
+- 井深：`1.4 kcal/mol`
+- 95% 置信区间：`[1.2, 2.0] kcal/mol`
+- Bootstrap 请求：`20`
+- Bootstrap 有效：`20`
+- Bootstrap 单位：`synthetic test blocks`
+- 种子：`20261013`
+- 窗口重叠最小值：`0.1`
+- 窗口重叠最低要求：`0.03`
+- 低于阈值窗口：无
+- 标准态修正：`false`，未应用
+- 解释：local PMF QC is available; standard-state correction is not applied
+- 证据文件：`PMF/DEMO_B_c1/summary.json`
+
+## MD 独立复本对比结果
+
+### demo_contact_count
+
+- 比较：`DEMO_A-minus-DEMO_B`
+- 每组独立复本数：`3`
+- 平均差值：`-0.2 count`
+- 95% 置信区间：`[-1, 0.6]`
+- 判定：`ci_crosses_zero_not_resolved`
+- 状态：方向未分辨；不能据此声称两组相同或存在方向性机制差异
+- 证据文件：`MD/contrasts.csv`
+
+### demo_bridge_count
+
+- 比较：`DEMO_A-minus-DEMO_B`
+- 每组独立复本数：`3`
+- 平均差值：`0 count`
+- 95% 置信区间：`[-0.5, 0.5]`
+- 判定：`ci_crosses_zero_not_resolved`
+- 状态：方向未分辨；不能据此声称两组相同或存在方向性机制差异
+- 证据文件：`MD/contrasts.csv`
+
+## SAPT 模型审计结果
+
+- 工具状态：结构化错误
+- 错误：`EVIDENCE_FILE_MISSING: AI/audit.json`
+- 样本数：缺失
+- 骨架数：缺失
+- 家族数：缺失
+- 分组：`LOSO` / `LOFO`
+- 诊断范围：SAPT 状态限定为 `interpolation_diagnostic_only`
+- 处理：已确认缺失文件错误；排除所有 SAPT 数值判断；恢复 `AI/audit.json` 后，应重新装载并新建会话，再重新盘点和审计。
+
+## 范围限制
+
+这些测试只能验证程序、配置、工具调用和不确定性/错误处理流程；不能证明宏观相分离、材料优势、机制因果或可迁移设计规则。

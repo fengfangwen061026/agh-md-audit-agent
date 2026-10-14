@@ -1,0 +1,3 @@
+condition,cutoff_A,window
+DEMO_A,5,synthetic_window
+DEMO_B,5,synthetic_window

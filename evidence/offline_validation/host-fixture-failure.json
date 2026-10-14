@@ -1,0 +1,21 @@
+{
+  "package": {
+    "id": "@demo/agh-scientific-audit",
+    "integrity": "sha256-e0ce554e5e5bfe9d2ddc58b2ae0f78efe2fdc65d62b1ce50dcf648a7db737f2b",
+    "capabilityHash": "e3de4e5f2da4b8aa2650af5c4f822d397c2dadd7a6695e5071c0444d26a22b01",
+    "blockers": []
+  },
+  "tools": [
+    "skill_read",
+    "evidence_inventory",
+    "audit_sapt_model"
+  ],
+  "mode": "failure",
+  "session_key": "demo-session-9d5c0b241b16",
+  "turn": {
+    "stopReason": "end_turn",
+    "reason": "completed",
+    "lastSeq": 74
+  },
+  "provider": "local deterministic fixture (not Agnes model)"
+}

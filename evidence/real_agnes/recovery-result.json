@@ -1,0 +1,755 @@
+{
+  "date": "2026-10-13",
+  "mode": "recovery",
+  "data_origin": "team-authored synthetic data; no research evidence sent",
+  "provider": "agnes-ai",
+  "model": "agnes-3.0-flash",
+  "api_key": "omitted",
+  "workspace": "PUBLIC_WORKSPACE/视频录制工作区/全流程测试_2026-10-13/recovery",
+  "agh_home": "PUBLIC_TEMP_HOME/recovery",
+  "session_id": "demo-session-8b85b83056fa",
+  "package": {
+    "id": "@demo/agh-scientific-audit",
+    "blockers": [],
+    "actual": "running",
+    "recorded_snapshot_integrity": "sha256-bd2e8eebcad619d5a6a97c9352a61142e2514b72d1960e897844e1b6285a9624"
+  },
+  "elapsed_seconds": 59.775,
+  "tool_calls": [
+    "tool_search",
+    "tool_describe",
+    "tool_describe",
+    "tool_describe",
+    "tool_describe",
+    "evidence_inventory",
+    "audit_pmf_condition",
+    "audit_pmf_condition",
+    "compare_md_replicas",
+    "compare_md_replicas",
+    "audit_sapt_model"
+  ],
+  "scientific_calls": [
+    "evidence_inventory",
+    "audit_pmf_condition",
+    "audit_pmf_condition",
+    "compare_md_replicas",
+    "compare_md_replicas",
+    "audit_sapt_model"
+  ],
+  "checks": {
+    "real_agnes_verified": true,
+    "package_running": true,
+    "skill_read": false,
+    "scientific_sequence": true,
+    "inventory": true,
+    "two_pmf_scoped": true,
+    "two_md_cross_zero": true,
+    "sapt": true,
+    "turn_complete": true,
+    "substantive_answer": true,
+    "synthetic_disclosure": true,
+    "correction_limit_in_answer": true,
+    "uncertainty_in_answer": true,
+    "failure_in_answer": true
+  },
+  "turn": {
+    "stopReason": "end_turn",
+    "reason": "completed",
+    "lastSeq": 156
+  },
+  "final_answer_chars": 1806,
+  "events": [
+    {
+      "type": "tool/call",
+      "elapsed_ms": 11621,
+      "data": {
+        "toolUseId": "t0-ed0c6e9ce4f768eb7ad412c63f0c47b8",
+        "name": "tool_search",
+        "args": {
+          "query": "evidence_inventory audit_pmf_condition compare_md_replicas audit_sapt_model"
+        },
+        "ordinal": 0,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "126da0295b2d4e52e0960ddf7a23112946317bbb5f6e03914b838a43120e8cdc",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 11630,
+      "data": {
+        "toolUseId": "t0-ed0c6e9ce4f768eb7ad412c63f0c47b8",
+        "content": [
+          {
+            "type": "text",
+            "text": "no matching tools or ready Skills"
+          }
+        ],
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 21766,
+      "data": {
+        "toolUseId": "t1-a0b6f929debb15be97e462abe341c40f",
+        "name": "tool_describe",
+        "args": {
+          "name": "evidence_inventory"
+        },
+        "ordinal": 1,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "12883057f4ad35ce7e38dff55bf453acdf2d5617d207643bb629ec576810134a",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 21767,
+      "data": {
+        "toolUseId": "t2-7e9c05f439df6e05c48b94b582e7da21",
+        "name": "tool_describe",
+        "args": {
+          "name": "audit_pmf_condition"
+        },
+        "ordinal": 2,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "12883057f4ad35ce7e38dff55bf453acdf2d5617d207643bb629ec576810134a",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 21768,
+      "data": {
+        "toolUseId": "t3-63e783a074929b56783754e39a56c282",
+        "name": "tool_describe",
+        "args": {
+          "name": "compare_md_replicas"
+        },
+        "ordinal": 3,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "12883057f4ad35ce7e38dff55bf453acdf2d5617d207643bb629ec576810134a",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 21769,
+      "data": {
+        "toolUseId": "t4-3d34b2ff63c4c2256f7b94375b4f26f8",
+        "name": "tool_describe",
+        "args": {
+          "name": "audit_sapt_model"
+        },
+        "ordinal": 4,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "12883057f4ad35ce7e38dff55bf453acdf2d5617d207643bb629ec576810134a",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 21780,
+      "data": {
+        "toolUseId": "t2-7e9c05f439df6e05c48b94b582e7da21",
+        "content": [
+          {
+            "type": "text",
+            "text": "audit_pmf_condition: Validate one precomputed PMF condition and return QC plus scope limits.\nparameters: {\"type\":\"object\",\"properties\":{\"condition\":{\"type\":\"string\",\"minLength\":1}},\"required\":[\"condition\"],\"additionalProperties\":false}"
+          }
+        ],
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 21781,
+      "data": {
+        "toolUseId": "t4-3d34b2ff63c4c2256f7b94375b4f26f8",
+        "content": [
+          {
+            "type": "text",
+            "text": "audit_sapt_model: Audit grouped SAPT predictions and return the interpolation-only conclusion.\nparameters: {\"type\":\"object\",\"properties\":{},\"additionalProperties\":false}"
+          }
+        ],
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 21782,
+      "data": {
+        "toolUseId": "t1-a0b6f929debb15be97e462abe341c40f",
+        "content": [
+          {
+            "type": "text",
+            "text": "evidence_inventory: Check the curated scientific evidence package and its claim boundaries.\nparameters: {\"type\":\"object\",\"properties\":{},\"additionalProperties\":false}"
+          }
+        ],
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 21783,
+      "data": {
+        "toolUseId": "t3-63e783a074929b56783754e39a56c282",
+        "content": [
+          {
+            "type": "text",
+            "text": "compare_md_replicas: Read one independent-replica contrast and apply the confidence-interval guardrail.\nparameters: {\"type\":\"object\",\"properties\":{\"comparison\":{\"type\":\"string\",\"minLength\":1},\"metric\":{\"type\":\"string\",\"minLength\":1}},\"required\":[\"comparison\",\"metric\"],\"additionalProperties\":false}"
+          }
+        ],
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 23779,
+      "data": {
+        "toolUseId": "t5-0422a213a9bca33b7880be32c1a56d4d",
+        "name": "evidence_inventory",
+        "args": {},
+        "ordinal": 5,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "cdcdf654a2d4cdf00ded1899f056ef75c0e2419bcde32a767cebcfa82c64e2da",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 23791,
+      "data": {
+        "toolUseId": "t5-0422a213a9bca33b7880be32c1a56d4d",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"tool_version\":\"0.2.0\",\"config_version\":\"1.0\",\"status\":\"evidence_ready_for_configured_audits\",\"dataset\":\"TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS\",\"dataset_id\":\"team-synthetic-agh-video-test-v1\",\"raw_trajectories_included\":false,\"pmf_conditions\":[\"DEMO_A_c0\",\"DEMO_A_c1\",\"DEMO_A_c2\",\"DEMO_B_c0\",\"DEMO_B_c1\",\"DEMO_B_c2\",\"DEMO_C_c0\",\"DEMO_C_c1\",\"DEMO_C_c2\"],\"pmf_conditions_declared\":9,\"md_comparisons\":[\"DEMO_A-minus-DEMO_B\"],\"md_metrics\":[{\"id\":\"demo_contact_count\",\"unit\":\"count\"},{\"id\":\"demo_bridge_count\",\"unit\":\"count\"}],\"files_expected\":15,\"files_present\":15,\"missing_files\":[],\"invalid_files\":[],\"claims_supported\":[\"Synthetic input validation\",\"Configured tool execution\",\"Uncertainty and error handling\"],\"claims_blocked\":[\"Any scientific inference from synthetic test values\",\"Macroscopic phase separation\",\"Causal mechanisms or transferable design rules\"],\"configuration_file\":\"audit_config.json\",\"provenance_file\":\"provenance.json\"}"
+          }
+        ],
+        "structured": {
+          "tool_version": "0.2.0",
+          "config_version": "1.0",
+          "status": "evidence_ready_for_configured_audits",
+          "dataset": "TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS",
+          "dataset_id": "team-synthetic-agh-video-test-v1",
+          "raw_trajectories_included": false,
+          "pmf_conditions": [
+            "DEMO_A_c0",
+            "DEMO_A_c1",
+            "DEMO_A_c2",
+            "DEMO_B_c0",
+            "DEMO_B_c1",
+            "DEMO_B_c2",
+            "DEMO_C_c0",
+            "DEMO_C_c1",
+            "DEMO_C_c2"
+          ],
+          "pmf_conditions_declared": 9,
+          "md_comparisons": [
+            "DEMO_A-minus-DEMO_B"
+          ],
+          "md_metrics": [
+            {
+              "id": "demo_contact_count",
+              "unit": "count"
+            },
+            {
+              "id": "demo_bridge_count",
+              "unit": "count"
+            }
+          ],
+          "files_expected": 15,
+          "files_present": 15,
+          "missing_files": [],
+          "invalid_files": [],
+          "claims_supported": [
+            "Synthetic input validation",
+            "Configured tool execution",
+            "Uncertainty and error handling"
+          ],
+          "claims_blocked": [
+            "Any scientific inference from synthetic test values",
+            "Macroscopic phase separation",
+            "Causal mechanisms or transferable design rules"
+          ],
+          "configuration_file": "audit_config.json",
+          "provenance_file": "provenance.json"
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 32737,
+      "data": {
+        "toolUseId": "t6-e02ad7a34cf3476a157c4f3cd6257f03",
+        "name": "audit_pmf_condition",
+        "args": {
+          "condition": "DEMO_A_c1"
+        },
+        "ordinal": 6,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "de956bf0594b5c2d7729e1f2978aed5ed2aafae4108c5ac0eac64ff9fa3d9e94",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 32737,
+      "data": {
+        "toolUseId": "t7-e0ee0cd31138a6c37b2da5499af3d787",
+        "name": "audit_pmf_condition",
+        "args": {
+          "condition": "DEMO_B_c1"
+        },
+        "ordinal": 7,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "de956bf0594b5c2d7729e1f2978aed5ed2aafae4108c5ac0eac64ff9fa3d9e94",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 32744,
+      "data": {
+        "toolUseId": "t6-e02ad7a34cf3476a157c4f3cd6257f03",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"step\":\"pmf_qc\",\"condition\":\"DEMO_A_c1\",\"status\":\"quality_gate_passed_with_scope_limits\",\"well_depth_kcal_mol\":1.2,\"well_depth_ci95_kcal_mol\":[1,1.4],\"bootstrap\":{\"requested\":20,\"valid\":20,\"unit\":\"synthetic test blocks\",\"seed\":20261013},\"window_overlap\":{\"minimum\":0.1,\"minimum_required\":0.03,\"below_threshold\":[]},\"standard_state_correction_applied\":false,\"interpretation\":\"local PMF QC is available; standard-state correction is not applied\",\"evidence_file\":\"PMF/DEMO_A_c1/summary.json\"}"
+          }
+        ],
+        "structured": {
+          "step": "pmf_qc",
+          "condition": "DEMO_A_c1",
+          "status": "quality_gate_passed_with_scope_limits",
+          "well_depth_kcal_mol": 1.2,
+          "well_depth_ci95_kcal_mol": [
+            1,
+            1.4
+          ],
+          "bootstrap": {
+            "requested": 20,
+            "valid": 20,
+            "unit": "synthetic test blocks",
+            "seed": 20261013
+          },
+          "window_overlap": {
+            "minimum": 0.1,
+            "minimum_required": 0.03,
+            "below_threshold": []
+          },
+          "standard_state_correction_applied": false,
+          "interpretation": "local PMF QC is available; standard-state correction is not applied",
+          "evidence_file": "PMF/DEMO_A_c1/summary.json"
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 32745,
+      "data": {
+        "toolUseId": "t7-e0ee0cd31138a6c37b2da5499af3d787",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"step\":\"pmf_qc\",\"condition\":\"DEMO_B_c1\",\"status\":\"quality_gate_passed_with_scope_limits\",\"well_depth_kcal_mol\":1.4,\"well_depth_ci95_kcal_mol\":[1.2,1.5999999999999999],\"bootstrap\":{\"requested\":20,\"valid\":20,\"unit\":\"synthetic test blocks\",\"seed\":20261013},\"window_overlap\":{\"minimum\":0.1,\"minimum_required\":0.03,\"below_threshold\":[]},\"standard_state_correction_applied\":false,\"interpretation\":\"local PMF QC is available; standard-state correction is not applied\",\"evidence_file\":\"PMF/DEMO_B_c1/summary.json\"}"
+          }
+        ],
+        "structured": {
+          "step": "pmf_qc",
+          "condition": "DEMO_B_c1",
+          "status": "quality_gate_passed_with_scope_limits",
+          "well_depth_kcal_mol": 1.4,
+          "well_depth_ci95_kcal_mol": [
+            1.2,
+            1.5999999999999999
+          ],
+          "bootstrap": {
+            "requested": 20,
+            "valid": 20,
+            "unit": "synthetic test blocks",
+            "seed": 20261013
+          },
+          "window_overlap": {
+            "minimum": 0.1,
+            "minimum_required": 0.03,
+            "below_threshold": []
+          },
+          "standard_state_correction_applied": false,
+          "interpretation": "local PMF QC is available; standard-state correction is not applied",
+          "evidence_file": "PMF/DEMO_B_c1/summary.json"
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 37453,
+      "data": {
+        "toolUseId": "t8-88c60ded9f9e46694d9aaf07c49f7bf1",
+        "name": "compare_md_replicas",
+        "args": {
+          "comparison": "DEMO_A-minus-DEMO_B",
+          "metric": "demo_contact_count"
+        },
+        "ordinal": 8,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "a506a51a20740b84fd8590655f1092832ad86c9eb8cd8d83c4e06ea766b71170",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 37454,
+      "data": {
+        "toolUseId": "t9-ed89e5e8d21ffd8ee789630eb5cef338",
+        "name": "compare_md_replicas",
+        "args": {
+          "comparison": "DEMO_A-minus-DEMO_B",
+          "metric": "demo_bridge_count"
+        },
+        "ordinal": 9,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "a506a51a20740b84fd8590655f1092832ad86c9eb8cd8d83c4e06ea766b71170",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 37461,
+      "data": {
+        "toolUseId": "t8-88c60ded9f9e46694d9aaf07c49f7bf1",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"step\":\"md_replica_contrast\",\"comparison\":\"DEMO_A-minus-DEMO_B\",\"metric\":\"demo_contact_count\",\"n_independent_replicas_per_group\":3,\"delta_mean\":-0.2,\"ci95\":[-1,0.6],\"verdict\":\"ci_crosses_zero_not_resolved\",\"unit\":\"count\",\"evidence_file\":\"MD/contrasts.csv\",\"guardrail\":\"A confidence interval crossing zero cannot support a directional mechanistic claim.\"}"
+          }
+        ],
+        "structured": {
+          "step": "md_replica_contrast",
+          "comparison": "DEMO_A-minus-DEMO_B",
+          "metric": "demo_contact_count",
+          "n_independent_replicas_per_group": 3,
+          "delta_mean": -0.2,
+          "ci95": [
+            -1,
+            0.6
+          ],
+          "verdict": "ci_crosses_zero_not_resolved",
+          "unit": "count",
+          "evidence_file": "MD/contrasts.csv",
+          "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 37462,
+      "data": {
+        "toolUseId": "t9-ed89e5e8d21ffd8ee789630eb5cef338",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"step\":\"md_replica_contrast\",\"comparison\":\"DEMO_A-minus-DEMO_B\",\"metric\":\"demo_bridge_count\",\"n_independent_replicas_per_group\":3,\"delta_mean\":0,\"ci95\":[-0.5,0.5],\"verdict\":\"ci_crosses_zero_not_resolved\",\"unit\":\"count\",\"evidence_file\":\"MD/contrasts.csv\",\"guardrail\":\"A confidence interval crossing zero cannot support a directional mechanistic claim.\"}"
+          }
+        ],
+        "structured": {
+          "step": "md_replica_contrast",
+          "comparison": "DEMO_A-minus-DEMO_B",
+          "metric": "demo_bridge_count",
+          "n_independent_replicas_per_group": 3,
+          "delta_mean": 0,
+          "ci95": [
+            -0.5,
+            0.5
+          ],
+          "verdict": "ci_crosses_zero_not_resolved",
+          "unit": "count",
+          "evidence_file": "MD/contrasts.csv",
+          "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 38804,
+      "data": {
+        "toolUseId": "t10-eee672ea4929be5b742693d3a55f5c93",
+        "name": "audit_sapt_model",
+        "args": {},
+        "ordinal": 10,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "977c31cf668eac8bf9bb4fb374c6d44712ed5e191aba012982c9f9dea7717378",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 38810,
+      "data": {
+        "toolUseId": "t10-eee672ea4929be5b742693d3a55f5c93",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":\"interpolation_diagnostic_only\",\"target\":\"synthetic fixture target (kcal/mol)\",\"n_unique_samples\":8,\"n_scaffolds\":4,\"n_families\":2,\"grouped_metrics\":[{\"scheme\":\"loso\",\"model\":\"synthetic_baseline\",\"n_samples\":8,\"mae_kcal_mol\":0.3,\"mae_ci95\":[0.2,0.4]},{\"scheme\":\"lofo\",\"model\":\"synthetic_baseline\",\"n_samples\":8,\"mae_kcal_mol\":0.5,\"mae_ci95\":[0.4,0.6]}],\"selected_alpha\":1,\"scope\":\"Synthetic grouped interpolation diagnostic for execution testing only.\",\"cross_scale_join\":\"No scientific conclusions or cross-scale causal join from synthetic data.\",\"guardrail\":\"Do not report this audit as a transferable design rule or causal evidence for a specific material.\",\"evidence_files\":[\"AI/metrics.csv\",\"AI/audit.json\"]}"
+          }
+        ],
+        "structured": {
+          "status": "interpolation_diagnostic_only",
+          "target": "synthetic fixture target (kcal/mol)",
+          "n_unique_samples": 8,
+          "n_scaffolds": 4,
+          "n_families": 2,
+          "grouped_metrics": [
+            {
+              "scheme": "loso",
+              "model": "synthetic_baseline",
+              "n_samples": 8,
+              "mae_kcal_mol": 0.3,
+              "mae_ci95": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "scheme": "lofo",
+              "model": "synthetic_baseline",
+              "n_samples": 8,
+              "mae_kcal_mol": 0.5,
+              "mae_ci95": [
+                0.4,
+                0.6
+              ]
+            }
+          ],
+          "selected_alpha": 1,
+          "scope": "Synthetic grouped interpolation diagnostic for execution testing only.",
+          "cross_scale_join": "No scientific conclusions or cross-scale causal join from synthetic data.",
+          "guardrail": "Do not report this audit as a transferable design rule or causal evidence for a specific material.",
+          "evidence_files": [
+            "AI/metrics.csv",
+            "AI/audit.json"
+          ]
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    }
+  ],
+  "public_redaction_applied": true,
+  "public_answer_sha256": "72cfba2943313d16a9bf382605ef49b49f4c80cdece41819c98bdffa21ecbee4"
+}

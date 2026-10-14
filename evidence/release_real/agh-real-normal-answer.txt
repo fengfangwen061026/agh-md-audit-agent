@@ -1,0 +1,111 @@
+完成
+
+以下按顺序给出结果。
+
+1. 证据清单状态
+- tool_version: 0.2.0
+- config_version: 1.0
+- status: evidence_ready_for_configured_audits
+- dataset: TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS
+- dataset_id: team-synthetic-agh-video-test-v1
+- raw_trajectories_included: false
+- PMF conditions: DEMO_A_c0, DEMO_A_c1, DEMO_A_c2, DEMO_B_c0, DEMO_B_c1, DEMO_B_c2, DEMO_C_c0, DEMO_C_c1, DEMO_C_c2
+- pmf_conditions_declared: 9
+- MD comparisons: DEMO_A-minus-DEMO_B
+- MD metrics:
+  - demo_contact_count, unit: count
+  - demo_bridge_count, unit: count
+- files_expected: 15
+- files_present: 15
+- missing_files: 无
+- invalid_files: 无
+- claims_supported:
+  - Synthetic input validation
+  - Configured tool execution
+  - Uncertainty and error handling
+- claims_blocked:
+  - Any scientific inference from synthetic test values
+  - Macroscopic phase separation
+  - Causal mechanisms or transferable design rules
+- configuration_file: audit_config.json
+- provenance_file: provenance.json
+
+2. PMF 条件审计
+- DEMO_A_c1
+  - status: quality_gate_passed_with_scope_limits
+  - well_depth_kcal_mol: 1.2
+  - well_depth_ci95_kcal_mol: [1.0, 1.4]
+  - bootstrap requested: 20, valid: 20, unit: synthetic test blocks, seed: 20261013
+  - window_overlap minimum: 0.1, minimum_required: 0.03, below_threshold: 无
+  - standard_state_correction_applied: false
+  - interpretation: local PMF QC is available; standard-state correction is not applied
+  - evidence_file: PMF/DEMO_A_c1/summary.json
+
+- DEMO_B_c1
+  - status: quality_gate_passed_with_scope_limits
+  - well_depth_kcal_mol: 1.4
+  - well_depth_ci95_kcal_mol: [1.2, 1.6]
+  - bootstrap requested: 20, valid: 20, unit: synthetic test blocks, seed: 20261013
+  - window_overlap minimum: 0.1, minimum_required: 0.03, below_threshold: 无
+  - standard_state_correction_applied: false
+  - interpretation: local PMF QC is available; standard-state correction is not applied
+  - evidence_file: PMF/DEMO_B_c1/summary.json
+
+范围限制：两个 PMF 条件均只有 local QC，标准态修正未应用；不能解释为标准结合自由能，也不能用于机制推断。
+
+3. MD 独立复本对比
+- 对比: DEMO_A-minus-DEMO_B
+- demo_contact_count
+  - status: ci_crosses_zero_not_resolved
+  - n_independent_replicas_per_group: 3
+  - delta_mean: -0.2
+  - ci95: [-1.0, 0.6]
+  - unit: count
+  - evidence_file: MD/contrasts.csv
+  - guardrail: A confidence interval crossing zero cannot support a directional mechanistic claim.
+
+- demo_bridge_count
+  - status: ci_crosses_zero_not_resolved
+  - n_independent_replicas_per_group: 3
+  - delta_mean: 0
+  - ci95: [-0.5, 0.5]
+  - unit: count
+  - evidence_file: MD/contrasts.csv
+  - guardrail: A confidence interval crossing zero cannot support a directional mechanistic claim.
+
+范围限制：两项置信区间均跨零，只能说明方向未分辨；不代表 DEMO_A 与 DEMO_B 相同。
+
+4. SAPT 审计
+- status: interpolation_diagnostic_only
+- target: synthetic fixture target (kcal/mol)
+- n_unique_samples: 8
+- n_scaffolds: 4
+- n_families: 2
+- grouped_metrics:
+  - scheme: loso, model: synthetic_baseline, n_samples: 8, mae_kcal_mol: 0.3, mae_ci95: [0.2, 0.4]
+  - scheme: lofo, model: synthetic_baseline, n_samples: 8, mae_kcal_mol: 0.5, mae_ci95: [0.4, 0.6]
+- selected_alpha: 1
+- scope: Synthetic grouped interpolation diagnostic for execution testing only.
+- cross_scale_join: No scientific conclusions or cross-scale causal join from synthetic data.
+- guardrail: Do not report this audit as a transferable design rule or causal evidence for a specific material.
+- evidence_files: AI/metrics.csv, AI/audit.json
+
+范围限制：SAPT 结果仅限 interpolation diagnostic，不能证明因果机制、宏观相分离或可迁移设计规则。
+
+5. 工具状态
+- evidence_inventory: 成功；15/15 文件存在，无缺失，无格式错误。
+- audit_pmf_condition: DEMO_A_c1 与 DEMO_B_c1 均成功。
+- compare_md_replicas: demo_contact_count 与 demo_bridge_count 均成功。
+- audit_sapt_model: 成功；AI/metrics.csv 与 AI/audit.json 被报告为证据文件。由于未见缺文件，不需要执行缺失文件恢复或重新装载。
+
+证据路径
+- audit_config.json
+- provenance.json
+- PMF/DEMO_A_c1/summary.json
+- PMF/DEMO_B_c1/summary.json
+- MD/contrasts.csv
+- AI/metrics.csv
+- AI/audit.json
+
+缺失文件处理
+- 无缺失文件，无 invalid_files。

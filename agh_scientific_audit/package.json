@@ -1,0 +1,17 @@
+{
+  "name": "@demo/agh-scientific-audit",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "exports": "./index.mjs",
+  "agnes": {
+    "plugins": [
+      {
+        "export": "scientificEvidenceAudit",
+        "id": "ext:demo/scientific-evidence-audit",
+        "inject": ["extension"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "target": "synthetic fixture target (kcal/mol)",
+  "n_unique_samples": 8,
+  "n_scaffolds": 4,
+  "n_families": 2,
+  "grouped_prediction_r2": [],
+  "selected_full_data_alpha": 1,
+  "scope": "Synthetic grouped interpolation diagnostic for execution testing only.",
+  "cross_scale_join": "No scientific conclusions or cross-scale causal join from synthetic data."
+}

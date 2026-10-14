@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0",
+  "provider": "none; offline tool execution",
+  "data_origin": "team-authored synthetic test data",
+  "scientific_inference_supported": false,
+  "node": "v24.18.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "inputs_sha256": {
+    "audit_config.json": "02e40648b0ad8e196a25af084eb4dca5153c416794ff692775ed533bef8008b8",
+    "MD/contrasts.csv": "32fa9b9bf7f7da9187dbefae407d81c177e874a7640c20fda140c2032d621008",
+    "AI/metrics.csv": "696ce24f094e0ddca971f4555e5ed39b96b4bc14b694216deb8d7ffe9e609b32",
+    "AI/audit.json": "993b207414bbde73c3f8b67fc64e5e1fc36bd1827fb7eee8fde7df235dab23bb"
+  },
+  "checks": {
+    "normal": true,
+    "boundary": true,
+    "failure": true,
+    "recovery": true
+  },
+  "all_checks_passed": true,
+  "logs": [
+    {
+      "case": "normal",
+      "start": "2026-10-13T12:43:14.442Z",
+      "end": "2026-10-13T12:43:14.450Z",
+      "tool": "evidence_inventory",
+      "args": {},
+      "result": {
+        "ok": true,
+        "tool_version": "0.2.0",
+        "config_version": "1.0",
+        "status": "evidence_ready_for_configured_audits",
+        "dataset": "TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS",
+        "dataset_id": "team-synthetic-agh-video-test-v1",
+        "raw_trajectories_included": false,
+        "pmf_conditions": [
+          "DEMO_A_c0",
+          "DEMO_A_c1",
+          "DEMO_A_c2",
+          "DEMO_B_c0",
+          "DEMO_B_c1",
+          "DEMO_B_c2",
+          "DEMO_C_c0",
+          "DEMO_C_c1",
+          "DEMO_C_c2"
+        ],
+        "pmf_conditions_declared": 9,
+        "md_comparisons": [
+          "DEMO_A-minus-DEMO_B"
+        ],
+        "md_metrics": [
+          {
+            "id": "demo_contact_count",
+            "unit": "count"
+          },
+          {
+            "id": "demo_bridge_count",
+            "unit": "count"
+          }
+        ],
+        "files_expected": 15,
+        "files_present": 15,
+        "missing_files": [],
+        "invalid_files": [],
+        "claims_supported": [
+          "Synthetic input validation",
+          "Configured tool execution",
+          "Uncertainty and error handling"
+        ],
+        "claims_blocked": [
+          "Any scientific inference from synthetic test values",
+          "Macroscopic phase separation",
+          "Causal mechanisms or transferable design rules"
+        ],
+        "configuration_file": "audit_config.json",
+        "provenance_file": "provenance.json"
+      }
+    },
+    {
+      "case": "normal",
+      "start": "2026-10-13T12:43:14.450Z",
+      "end": "2026-10-13T12:43:14.451Z",
+      "tool": "audit_pmf_condition",
+      "args": {
+        "condition": "DEMO_A_c1"
+      },
+      "result": {
+        "ok": true,
+        "step": "pmf_qc",
+        "condition": "DEMO_A_c1",
+        "status": "quality_gate_passed_with_scope_limits",
+        "well_depth_kcal_mol": 1.2,
+        "well_depth_ci95_kcal_mol": [
+          1,
+          1.4
+        ],
+        "bootstrap": {
+          "requested": 20,
+          "valid": 20,
+          "unit": "synthetic test blocks",
+          "seed": 20261013
+        },
+        "window_overlap": {
+          "minimum": 0.1,
+          "minimum_required": 0.03,
+          "below_threshold": []
+        },
+        "standard_state_correction_applied": false,
+        "interpretation": "local PMF QC is available; standard-state correction is not applied",
+        "evidence_file": "PMF/DEMO_A_c1/summary.json"
+      }
+    },
+    {
+      "case": "normal",
+      "start": "2026-10-13T12:43:14.451Z",
+      "end": "2026-10-13T12:43:14.451Z",
+      "tool": "audit_pmf_condition",
+      "args": {
+        "condition": "DEMO_B_c1"
+      },
+      "result": {
+        "ok": true,
+        "step": "pmf_qc",
+        "condition": "DEMO_B_c1",
+        "status": "quality_gate_passed_with_scope_limits",
+        "well_depth_kcal_mol": 1.4,
+        "well_depth_ci95_kcal_mol": [
+          1.2,
+          1.5999999999999999
+        ],
+        "bootstrap": {
+          "requested": 20,
+          "valid": 20,
+          "unit": "synthetic test blocks",
+          "seed": 20261013
+        },
+        "window_overlap": {
+          "minimum": 0.1,
+          "minimum_required": 0.03,
+          "below_threshold": []
+        },
+        "standard_state_correction_applied": false,
+        "interpretation": "local PMF QC is available; standard-state correction is not applied",
+        "evidence_file": "PMF/DEMO_B_c1/summary.json"
+      }
+    },
+    {
+      "case": "normal",
+      "start": "2026-10-13T12:43:14.451Z",
+      "end": "2026-10-13T12:43:14.452Z",
+      "tool": "compare_md_replicas",
+      "args": {
+        "comparison": "DEMO_A-minus-DEMO_B",
+        "metric": "demo_contact_count"
+      },
+      "result": {
+        "ok": true,
+        "step": "md_replica_contrast",
+        "comparison": "DEMO_A-minus-DEMO_B",
+        "metric": "demo_contact_count",
+        "n_independent_replicas_per_group": 3,
+        "delta_mean": -0.2,
+        "ci95": [
+          -1,
+          0.6
+        ],
+        "verdict": "ci_crosses_zero_not_resolved",
+        "unit": "count",
+        "evidence_file": "MD/contrasts.csv",
+        "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+      }
+    },
+    {
+      "case": "normal",
+      "start": "2026-10-13T12:43:14.452Z",
+      "end": "2026-10-13T12:43:14.452Z",
+      "tool": "compare_md_replicas",
+      "args": {
+        "comparison": "DEMO_A-minus-DEMO_B",
+        "metric": "demo_bridge_count"
+      },
+      "result": {
+        "ok": true,
+        "step": "md_replica_contrast",
+        "comparison": "DEMO_A-minus-DEMO_B",
+        "metric": "demo_bridge_count",
+        "n_independent_replicas_per_group": 3,
+        "delta_mean": 0,
+        "ci95": [
+          -0.5,
+          0.5
+        ],
+        "verdict": "ci_crosses_zero_not_resolved",
+        "unit": "count",
+        "evidence_file": "MD/contrasts.csv",
+        "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+      }
+    },
+    {
+      "case": "normal",
+      "start": "2026-10-13T12:43:14.452Z",
+      "end": "2026-10-13T12:43:14.452Z",
+      "tool": "audit_sapt_model",
+      "args": {},
+      "result": {
+        "ok": true,
+        "status": "interpolation_diagnostic_only",
+        "target": "synthetic fixture target (kcal/mol)",
+        "n_unique_samples": 8,
+        "n_scaffolds": 4,
+        "n_families": 2,
+        "grouped_metrics": [
+          {
+            "scheme": "loso",
+            "model": "synthetic_baseline",
+            "n_samples": 8,
+            "mae_kcal_mol": 0.3,
+            "mae_ci95": [
+              0.2,
+              0.4
+            ]
+          },
+          {
+            "scheme": "lofo",
+            "model": "synthetic_baseline",
+            "n_samples": 8,
+            "mae_kcal_mol": 0.5,
+            "mae_ci95": [
+              0.4,
+              0.6
+            ]
+          }
+        ],
+        "selected_alpha": 1,
+        "scope": "Synthetic grouped interpolation diagnostic for execution testing only.",
+        "cross_scale_join": "No scientific conclusions or cross-scale causal join from synthetic data.",
+        "guardrail": "Do not report this audit as a transferable design rule or causal evidence for a specific material.",
+        "evidence_files": [
+          "AI/metrics.csv",
+          "AI/audit.json"
+        ]
+      }
+    },
+    {
+      "case": "failure",
+      "start": "2026-10-13T12:43:14.466Z",
+      "end": "2026-10-13T12:43:14.468Z",
+      "tool": "evidence_inventory",
+      "args": {},
+      "result": {
+        "ok": true,
+        "tool_version": "0.2.0",
+        "config_version": "1.0",
+        "status": "evidence_needs_attention",
+        "dataset": "TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS",
+        "dataset_id": "team-synthetic-agh-video-test-v1",
+        "raw_trajectories_included": false,
+        "pmf_conditions": [
+          "DEMO_A_c0",
+          "DEMO_A_c1",
+          "DEMO_A_c2",
+          "DEMO_B_c0",
+          "DEMO_B_c1",
+          "DEMO_B_c2",
+          "DEMO_C_c0",
+          "DEMO_C_c1",
+          "DEMO_C_c2"
+        ],
+        "pmf_conditions_declared": 9,
+        "md_comparisons": [
+          "DEMO_A-minus-DEMO_B"
+        ],
+        "md_metrics": [
+          {
+            "id": "demo_contact_count",
+            "unit": "count"
+          },
+          {
+            "id": "demo_bridge_count",
+            "unit": "count"
+          }
+        ],
+        "files_expected": 15,
+        "files_present": 14,
+        "missing_files": [
+          "AI/audit.json"
+        ],
+        "invalid_files": [],
+        "claims_supported": [
+          "Synthetic input validation",
+          "Configured tool execution",
+          "Uncertainty and error handling"
+        ],
+        "claims_blocked": [
+          "Any scientific inference from synthetic test values",
+          "Macroscopic phase separation",
+          "Causal mechanisms or transferable design rules"
+        ],
+        "configuration_file": "audit_config.json",
+        "provenance_file": "provenance.json"
+      }
+    },
+    {
+      "case": "failure",
+      "start": "2026-10-13T12:43:14.468Z",
+      "end": "2026-10-13T12:43:14.468Z",
+      "tool": "audit_sapt_model",
+      "args": {},
+      "result": {
+        "ok": false,
+        "error": "EVIDENCE_FILE_MISSING: AI/audit.json"
+      }
+    },
+    {
+      "case": "recovery",
+      "start": "2026-10-13T12:43:14.470Z",
+      "end": "2026-10-13T12:43:14.472Z",
+      "tool": "evidence_inventory",
+      "args": {},
+      "result": {
+        "ok": true,
+        "tool_version": "0.2.0",
+        "config_version": "1.0",
+        "status": "evidence_ready_for_configured_audits",
+        "dataset": "TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS",
+        "dataset_id": "team-synthetic-agh-video-test-v1",
+        "raw_trajectories_included": false,
+        "pmf_conditions": [
+          "DEMO_A_c0",
+          "DEMO_A_c1",
+          "DEMO_A_c2",
+          "DEMO_B_c0",
+          "DEMO_B_c1",
+          "DEMO_B_c2",
+          "DEMO_C_c0",
+          "DEMO_C_c1",
+          "DEMO_C_c2"
+        ],
+        "pmf_conditions_declared": 9,
+        "md_comparisons": [
+          "DEMO_A-minus-DEMO_B"
+        ],
+        "md_metrics": [
+          {
+            "id": "demo_contact_count",
+            "unit": "count"
+          },
+          {
+            "id": "demo_bridge_count",
+            "unit": "count"
+          }
+        ],
+        "files_expected": 15,
+        "files_present": 15,
+        "missing_files": [],
+        "invalid_files": [],
+        "claims_supported": [
+          "Synthetic input validation",
+          "Configured tool execution",
+          "Uncertainty and error handling"
+        ],
+        "claims_blocked": [
+          "Any scientific inference from synthetic test values",
+          "Macroscopic phase separation",
+          "Causal mechanisms or transferable design rules"
+        ],
+        "configuration_file": "audit_config.json",
+        "provenance_file": "provenance.json"
+      }
+    },
+    {
+      "case": "recovery",
+      "start": "2026-10-13T12:43:14.472Z",
+      "end": "2026-10-13T12:43:14.472Z",
+      "tool": "audit_sapt_model",
+      "args": {},
+      "result": {
+        "ok": true,
+        "status": "interpolation_diagnostic_only",
+        "target": "synthetic fixture target (kcal/mol)",
+        "n_unique_samples": 8,
+        "n_scaffolds": 4,
+        "n_families": 2,
+        "grouped_metrics": [
+          {
+            "scheme": "loso",
+            "model": "synthetic_baseline",
+            "n_samples": 8,
+            "mae_kcal_mol": 0.3,
+            "mae_ci95": [
+              0.2,
+              0.4
+            ]
+          },
+          {
+            "scheme": "lofo",
+            "model": "synthetic_baseline",
+            "n_samples": 8,
+            "mae_kcal_mol": 0.5,
+            "mae_ci95": [
+              0.4,
+              0.6
+            ]
+          }
+        ],
+        "selected_alpha": 1,
+        "scope": "Synthetic grouped interpolation diagnostic for execution testing only.",
+        "cross_scale_join": "No scientific conclusions or cross-scale causal join from synthetic data.",
+        "guardrail": "Do not report this audit as a transferable design rule or causal evidence for a specific material.",
+        "evidence_files": [
+          "AI/metrics.csv",
+          "AI/audit.json"
+        ]
+      }
+    }
+  ]
+}

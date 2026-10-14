@@ -1,0 +1,7 @@
+{
+  "scope": "engineering acceptance; narrative exact-field formatting is reviewed separately",
+  "normal_answer_synthetic_disclosure": "English dataset label explicitly states TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS; Chinese first-paragraph instruction was not followed",
+  "normal_answer_md_field_label": "Model wrote status for the tool's verdict field; values and unresolved verdict are correct. Tool JSON is authoritative.",
+  "recorded_all_checks_passed_scope": "completion, file inventory, Skill loading, MD boundary, SAPT normal/error path, substantive report length",
+  "research_claims": "No scientific inference from synthetic numbers"
+}

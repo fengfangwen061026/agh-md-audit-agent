@@ -1,0 +1,27 @@
+{
+  "publication_date": "2026-10-14",
+  "execution_date": "2026-10-13",
+  "data_origin": "team-authored synthetic fixtures only",
+  "research_data_included": false,
+  "credentials_included": false,
+  "screenshots_included": false,
+  "provider": "agnes-ai",
+  "model": "agnes-3.0-flash",
+  "agh_commit": "57d0c34b33527294042b7ab8a60d7c7c934e932e",
+  "redaction": [
+    "private workspace paths",
+    "local user identifier",
+    "session identifiers",
+    "original project branding",
+    "specific-material label"
+  ],
+  "unchanged": [
+    "synthetic numeric inputs",
+    "tool arguments except identifiers",
+    "tool status and error codes",
+    "event order",
+    "execution timestamps",
+    "observed model limitations"
+  ],
+  "provenance_limit": "These are sanitized historical execution records. Opaque snapshot hashes identify the pre-publication execution; they do not certify the modified public package. Public file hashes are in manifest.json."
+}

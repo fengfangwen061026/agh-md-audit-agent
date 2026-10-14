@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-13",
+  "node_tested": "v24.18.0",
+  "node_minimum": "24.10",
+  "os_tested": "macOS",
+  "arch_tested": "arm64",
+  "plugin": "0.2.0",
+  "config": "1.0",
+  "agh_commit": "57d0c34b33527294042b7ab8a60d7c7c934e932e",
+  "agh_worktree_clean_at_packaging": true,
+  "agh_version": "0.0.0 (source build; use commit to identify)",
+  "model_for_recorded_runs": "agnes-ai / agnes-3.0-flash",
+  "model_included": false,
+  "runtime_included": true,
+  "node_included": false,
+  "plugin_dependencies": [],
+  "precision": "JavaScript Number (IEEE-754 binary64); audits existing summaries; no MD integrator",
+  "synthetic_seed": 20261013,
+  "force_field": "not applicable to synthetic fixtures",
+  "units": {
+    "pmf": "kcal/mol",
+    "md": "count",
+    "sapt_mae": "kcal/mol"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "agh-md-audit-submission",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.10"
+  },
+  "scripts": {
+    "demo": "node scripts/demo.mjs",
+    "test": "node tests/run_local_cases.mjs",
+    "verify": "node scripts/verify_manifest.mjs",
+    "agh": "node scripts/run_agh_real.mjs",
+    "fixture": "node tests/run_agh_smoke.mjs"
+  }
+}

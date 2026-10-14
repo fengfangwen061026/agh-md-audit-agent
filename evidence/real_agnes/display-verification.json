@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-13",
+  "source": "real AGH session export and UI observation",
+  "provider": "agnes-ai",
+  "model": "agnes-3.0-flash",
+  "session_id": "demo-session-04925999e7a2",
+  "last_turn_start_seq": 225,
+  "elapsed_seconds": 40.649,
+  "tool_calls_in_display_turn": [],
+  "terminal_report_chars": 5524,
+  "checks": {
+    "turn_completed": true,
+    "no_tools_rerun": true,
+    "full_terminal_report": true,
+    "synthetic_disclosure": true,
+    "version_labels_exact": true,
+    "scheme_labels_exact": true,
+    "limits": true,
+    "ui_has_report": true
+  },
+  "all_checks_passed": true,
+  "public_redaction_applied": true
+}

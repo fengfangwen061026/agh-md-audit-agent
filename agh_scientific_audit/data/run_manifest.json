@@ -1,0 +1,16 @@
+{
+  "package": "TEAM SYNTHETIC AGH FULL-FLOW TEST",
+  "pmf_conditions": [
+    "DEMO_A_c0",
+    "DEMO_A_c1",
+    "DEMO_A_c2",
+    "DEMO_B_c0",
+    "DEMO_B_c1",
+    "DEMO_B_c2",
+    "DEMO_C_c0",
+    "DEMO_C_c1",
+    "DEMO_C_c2"
+  ],
+  "raw_trajectories_included": false,
+  "data_origin": "All values authored as program test fixtures on 2026-10-13; no research data copied."
+}

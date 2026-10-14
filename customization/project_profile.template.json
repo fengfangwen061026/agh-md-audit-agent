@@ -1,0 +1,79 @@
+{
+  "profile_version": "1.0",
+  "project_id": "replace-with-project-id",
+  "project_name": "replace-with-project-name",
+  "customization_path": "A_config_replace",
+  "research_question": "用一句话写明要比较或验证的科学问题",
+  "data_scope": {
+    "evidence_root": "data",
+    "raw_trajectories_included": false,
+    "input_files": [
+      {
+        "path": "MD/contrasts.csv",
+        "format": "csv",
+        "purpose": "独立复本组间对照",
+        "required_columns": [
+          "comparison",
+          "metric",
+          "n_per_group",
+          "delta_mean",
+          "ci95_low",
+          "ci95_high"
+        ]
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "id": "control_A_minus_control_B",
+      "meaning": "明确写出两组样品和差值方向"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "metric_name",
+      "unit": "unit",
+      "definition": "给出可复核的计算定义",
+      "statistical_unit": "independent_replica"
+    }
+  ],
+  "quality_gates": {
+    "minimum_independent_replicas": 3,
+    "confidence_interval": "95%",
+    "ci_crossing_zero_verdict": "ci_crosses_zero_not_resolved",
+    "required_provenance": true
+  },
+  "claims": {
+    "supported": [
+      "填写工具能够直接支持的主张"
+    ],
+    "blocked": [
+      "填写当前证据不能支持的主张"
+    ]
+  },
+  "workflow": {
+    "steps": [
+      "evidence_inventory",
+      "project_specific_audit",
+      "replica_contrast",
+      "final_scope_check"
+    ]
+  },
+  "provenance": {
+    "source_package": "填写来源包或实验批次",
+    "analysis_scripts": [
+      "填写生成汇总结果的脚本"
+    ],
+    "software_versions": {
+      "python": "填写版本",
+      "analysis_library": "填写版本"
+    }
+  },
+  "owner_checklist": [
+    "已定义独立复本和统计单位",
+    "已填写所有指标单位和计算定义",
+    "已区分局部 QC、相关性和因果主张",
+    "已准备一个正常样例和一个边界样例",
+    "已确认未包含原始轨迹、凭证或未授权数据"
+  ]
+}

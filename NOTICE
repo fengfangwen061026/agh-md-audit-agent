@@ -1,0 +1,4 @@
+This public demonstration uses team-authored synthetic fixtures only.
+Project source: MIT (see LICENSE).
+AgnesHarness runtime and SDK: Apache-2.0 with separately licensed material; see licenses/ and the full runnable release's runtime notices.
+Public redaction changes package branding and one material-specific explanatory guardrail; numerical audit logic is unchanged.

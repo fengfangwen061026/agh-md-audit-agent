@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "dataset": {
+    "id": "team-synthetic-agh-video-test-v1",
+    "name": "TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS"
+  },
+  "files": {
+    "manifest": {
+      "id": "run_manifest",
+      "path": "run_manifest.json",
+      "format": "json",
+      "required_fields": [
+        "package",
+        "pmf_conditions",
+        "raw_trajectories_included"
+      ]
+    },
+    "provenance": {
+      "id": "provenance",
+      "path": "provenance.json",
+      "format": "json",
+      "required_fields": [
+        "dataset_id",
+        "source_package",
+        "scientific_provenance"
+      ]
+    },
+    "md_contrasts": {
+      "id": "md_contrasts",
+      "path": "MD/contrasts.csv",
+      "format": "csv",
+      "required_columns": [
+        "comparison",
+        "metric",
+        "n_per_group",
+        "delta_mean",
+        "ci95_low",
+        "ci95_high"
+      ]
+    },
+    "md_group_summary": {
+      "id": "md_group_summary",
+      "path": "MD/group_mean_and_replica_SD.csv",
+      "format": "csv",
+      "required_columns": [
+        "condition",
+        "cutoff_A",
+        "window"
+      ]
+    },
+    "sapt_metrics": {
+      "id": "sapt_metrics",
+      "path": "AI/metrics.csv",
+      "format": "csv",
+      "required_columns": [
+        "scheme",
+        "model",
+        "n_samples",
+        "MAE_kcal_mol",
+        "MAE_bootstrap_ci95_low",
+        "MAE_bootstrap_ci95_high"
+      ]
+    },
+    "sapt_audit": {
+      "id": "sapt_audit",
+      "path": "AI/audit.json",
+      "format": "json",
+      "required_fields": [
+        "target",
+        "n_unique_samples",
+        "n_scaffolds",
+        "n_families",
+        "grouped_prediction_r2"
+      ]
+    },
+    "pmf_summary": {
+      "id_template": "pmf_summary:{condition}",
+      "path_template": "PMF/{condition}/summary.json",
+      "format": "json",
+      "required_fields": [
+        "well_depth_kcal_mol",
+        "well_depth_ci95_kcal_mol",
+        "bootstrap_requested",
+        "bootstrap_valid",
+        "min_neighbor_overlap",
+        "standard_state_correction"
+      ]
+    }
+  },
+  "pmf": {
+    "conditions": [
+      "DEMO_A_c0",
+      "DEMO_A_c1",
+      "DEMO_A_c2",
+      "DEMO_B_c0",
+      "DEMO_B_c1",
+      "DEMO_B_c2",
+      "DEMO_C_c0",
+      "DEMO_C_c1",
+      "DEMO_C_c2"
+    ],
+    "minimum_neighbor_overlap": 0.03,
+    "fields": {
+      "well_depth": "well_depth_kcal_mol",
+      "confidence_interval": "well_depth_ci95_kcal_mol",
+      "bootstrap_requested": "bootstrap_requested",
+      "bootstrap_valid": "bootstrap_valid",
+      "minimum_overlap": "min_neighbor_overlap",
+      "invalid_overlaps": "neighbor_overlaps_below_0p03",
+      "standard_state_correction": "standard_state_correction",
+      "bootstrap_unit": "bootstrap_unit",
+      "seed": "seed"
+    }
+  },
+  "md": {
+    "comparisons": [
+      "DEMO_A-minus-DEMO_B"
+    ],
+    "metrics": [
+      {
+        "id": "demo_contact_count",
+        "unit": "count"
+      },
+      {
+        "id": "demo_bridge_count",
+        "unit": "count"
+      }
+    ],
+    "minimum_independent_replicas": 2,
+    "columns": {
+      "comparison": "comparison",
+      "metric": "metric",
+      "replicas_per_group": "n_per_group",
+      "difference": "delta_mean",
+      "ci_low": "ci95_low",
+      "ci_high": "ci95_high"
+    }
+  },
+  "sapt": {
+    "grouped_schemes": [
+      "loso",
+      "lofo"
+    ],
+    "columns": {
+      "scheme": "scheme",
+      "model": "model",
+      "sample_count": "n_samples",
+      "mae": "MAE_kcal_mol",
+      "ci_low": "MAE_bootstrap_ci95_low",
+      "ci_high": "MAE_bootstrap_ci95_high"
+    },
+    "audit_fields": {
+      "target": "target",
+      "sample_count": "n_unique_samples",
+      "scaffold_count": "n_scaffolds",
+      "family_count": "n_families",
+      "selected_alpha": "selected_full_data_alpha",
+      "scope": "scope",
+      "cross_scale_join": "cross_scale_join"
+    }
+  },
+  "claims_supported": [
+    "Synthetic input validation",
+    "Configured tool execution",
+    "Uncertainty and error handling"
+  ],
+  "claims_blocked": [
+    "Any scientific inference from synthetic test values",
+    "Macroscopic phase separation",
+    "Causal mechanisms or transferable design rules"
+  ]
+}

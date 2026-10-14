@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.env.*
+outputs/
+execution_evidence/
+secrets/
+configuration.json
+AGH_HOME/
+raw_data/
+*.dcd
+*.xtc
+*.trj
+*.prmtop
+*.inpcrd
+node_modules/
+__pycache__/
+*.pyc

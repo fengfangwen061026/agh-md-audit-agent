@@ -1,0 +1,10 @@
+{
+  "dataset_id": "team-synthetic-agh-video-test-v1",
+  "source_package": "team-authored synthetic fixtures",
+  "scientific_provenance": {
+    "pmf": "synthetic",
+    "md": "synthetic",
+    "sapt": "synthetic"
+  },
+  "disclosure": "Not measurements, simulations, or model training results."
+}

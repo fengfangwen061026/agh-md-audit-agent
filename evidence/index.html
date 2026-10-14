@@ -1,0 +1,1551 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>公开版执行证据</title><style>body{max-width:1100px;margin:40px auto;padding:0 24px;font:16px/1.7 system-ui;color:#172b4d;background:#f4f7fb}section,details{background:white;border:1px solid #dce3ed;border-radius:12px;padding:18px;margin:14px 0}summary{cursor:pointer;font-weight:600}pre{font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>AGH MD Audit：公开版执行证据</h1><p>全部输入为合成测试数据。真实模型为 agnes-ai / agnes-3.0-flash，执行日期 2026-10-13。公开版已替换私有路径、用户与会话标识，保留数值、顺序及错误反馈。</p><p><a href="README.md">证据范围与限制</a> · <a href="boundary-case.json">统计边界</a> · <a href="real_agnes/display-session-export.jsonl">脱敏完整事件导出</a> · <a href="real_agnes/最终展示报告.md">报告</a></p><p>以下为历史实测记录的脱敏副本，不能用于原始账本签名验证。模型标签改写、报告折叠和其他已观察限制保留在记录中。截图未公开。</p><section><h2>正常：完整报告核验</h2><p>脱敏会话：demo-session-04925999e7a2</p><a href="real_agnes/revised-verified.json">结构化记录</a><details><summary>evidence_inventory</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t1-45f6f1232c36e2ee2e058c79169a67b4&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 27744,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t1-45f6f1232c36e2ee2e058c79169a67b4&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;tool_version\&quot;:\&quot;0.2.0\&quot;,\&quot;config_version\&quot;:\&quot;1.0\&quot;,\&quot;status\&quot;:\&quot;evidence_ready_for_configured_audits\&quot;,\&quot;dataset\&quot;:\&quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS\&quot;,\&quot;dataset_id\&quot;:\&quot;team-synthetic-agh-video-test-v1\&quot;,\&quot;raw_trajectories_included\&quot;:false,\&quot;pmf_conditions\&quot;:[\&quot;DEMO_A_c0\&quot;,\&quot;DEMO_A_c1\&quot;,\&quot;DEMO_A_c2\&quot;,\&quot;DEMO_B_c0\&quot;,\&quot;DEMO_B_c1\&quot;,\&quot;DEMO_B_c2\&quot;,\&quot;DEMO_C_c0\&quot;,\&quot;DEMO_C_c1\&quot;,\&quot;DEMO_C_c2\&quot;],\&quot;pmf_conditions_declared\&quot;:9,\&quot;md_comparisons\&quot;:[\&quot;DEMO_A-minus-DEMO_B\&quot;],\&quot;md_metrics\&quot;:[{\&quot;id\&quot;:\&quot;demo_contact_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;},{\&quot;id\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;}],\&quot;files_expected\&quot;:15,\&quot;files_present\&quot;:15,\&quot;missing_files\&quot;:[],\&quot;invalid_files\&quot;:[],\&quot;claims_supported\&quot;:[\&quot;Synthetic input validation\&quot;,\&quot;Configured tool execution\&quot;,\&quot;Uncertainty and error handling\&quot;],\&quot;claims_blocked\&quot;:[\&quot;Any scientific inference from synthetic test values\&quot;,\&quot;Macroscopic phase separation\&quot;,\&quot;Causal mechanisms or transferable design rules\&quot;],\&quot;configuration_file\&quot;:\&quot;audit_config.json\&quot;,\&quot;provenance_file\&quot;:\&quot;provenance.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;tool_version&quot;: &quot;0.2.0&quot;,
+      &quot;config_version&quot;: &quot;1.0&quot;,
+      &quot;status&quot;: &quot;evidence_ready_for_configured_audits&quot;,
+      &quot;dataset&quot;: &quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS&quot;,
+      &quot;dataset_id&quot;: &quot;team-synthetic-agh-video-test-v1&quot;,
+      &quot;raw_trajectories_included&quot;: false,
+      &quot;pmf_conditions&quot;: [
+        &quot;DEMO_A_c0&quot;,
+        &quot;DEMO_A_c1&quot;,
+        &quot;DEMO_A_c2&quot;,
+        &quot;DEMO_B_c0&quot;,
+        &quot;DEMO_B_c1&quot;,
+        &quot;DEMO_B_c2&quot;,
+        &quot;DEMO_C_c0&quot;,
+        &quot;DEMO_C_c1&quot;,
+        &quot;DEMO_C_c2&quot;
+      ],
+      &quot;pmf_conditions_declared&quot;: 9,
+      &quot;md_comparisons&quot;: [
+        &quot;DEMO_A-minus-DEMO_B&quot;
+      ],
+      &quot;md_metrics&quot;: [
+        {
+          &quot;id&quot;: &quot;demo_contact_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        },
+        {
+          &quot;id&quot;: &quot;demo_bridge_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        }
+      ],
+      &quot;files_expected&quot;: 15,
+      &quot;files_present&quot;: 15,
+      &quot;missing_files&quot;: [],
+      &quot;invalid_files&quot;: [],
+      &quot;claims_supported&quot;: [
+        &quot;Synthetic input validation&quot;,
+        &quot;Configured tool execution&quot;,
+        &quot;Uncertainty and error handling&quot;
+      ],
+      &quot;claims_blocked&quot;: [
+        &quot;Any scientific inference from synthetic test values&quot;,
+        &quot;Macroscopic phase separation&quot;,
+        &quot;Causal mechanisms or transferable design rules&quot;
+      ],
+      &quot;configuration_file&quot;: &quot;audit_config.json&quot;,
+      &quot;provenance_file&quot;: &quot;provenance.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t3-734b91e44b11384604594133583df70a&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 37846,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_A_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t3-734b91e44b11384604594133583df70a&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_A_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.2,\&quot;well_depth_ci95_kcal_mol\&quot;:[1,1.4],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_A_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_A_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.2,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1,
+        1.4
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_A_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t4-15aad688280b3dc87f485754686ca103&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 37847,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_B_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t4-15aad688280b3dc87f485754686ca103&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_B_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.4,\&quot;well_depth_ci95_kcal_mol\&quot;:[1.2,1.5999999999999999],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_B_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_B_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.4,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1.2,
+        1.5999999999999999
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_B_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t6-8bf3aca629bf98db826b09a80c608bcf&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 45643,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_contact_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t6-8bf3aca629bf98db826b09a80c608bcf&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_contact_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:-0.2,\&quot;ci95\&quot;:[-1,0.6],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_contact_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: -0.2,
+      &quot;ci95&quot;: [
+        -1,
+        0.6
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t7-7bd7d9ee9bc4acd6d3154b5d89891e81&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 45644,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_bridge_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t7-7bd7d9ee9bc4acd6d3154b5d89891e81&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:0,\&quot;ci95\&quot;:[-0.5,0.5],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_bridge_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: 0,
+      &quot;ci95&quot;: [
+        -0.5,
+        0.5
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_sapt_model</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t9-22402b735f2a35c4341ccd73bc916e6f&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 120975,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t9-22402b735f2a35c4341ccd73bc916e6f&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;status\&quot;:\&quot;interpolation_diagnostic_only\&quot;,\&quot;target\&quot;:\&quot;synthetic fixture target (kcal/mol)\&quot;,\&quot;n_unique_samples\&quot;:8,\&quot;n_scaffolds\&quot;:4,\&quot;n_families\&quot;:2,\&quot;grouped_metrics\&quot;:[{\&quot;scheme\&quot;:\&quot;loso\&quot;,\&quot;model\&quot;:\&quot;synthetic_baseline\&quot;,\&quot;n_samples\&quot;:8,\&quot;mae_kcal_mol\&quot;:0.3,\&quot;mae_ci95\&quot;:[0.2,0.4]},{\&quot;scheme\&quot;:\&quot;lofo\&quot;,\&quot;model\&quot;:\&quot;synthetic_baseline\&quot;,\&quot;n_samples\&quot;:8,\&quot;mae_kcal_mol\&quot;:0.5,\&quot;mae_ci95\&quot;:[0.4,0.6]}],\&quot;selected_alpha\&quot;:1,\&quot;scope\&quot;:\&quot;Synthetic grouped interpolation diagnostic for execution testing only.\&quot;,\&quot;cross_scale_join\&quot;:\&quot;No scientific conclusions or cross-scale causal join from synthetic data.\&quot;,\&quot;guardrail\&quot;:\&quot;Do not report this audit as a transferable design rule or causal evidence for a specific material.\&quot;,\&quot;evidence_files\&quot;:[\&quot;AI/metrics.csv\&quot;,\&quot;AI/audit.json\&quot;]}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;status&quot;: &quot;interpolation_diagnostic_only&quot;,
+      &quot;target&quot;: &quot;synthetic fixture target (kcal/mol)&quot;,
+      &quot;n_unique_samples&quot;: 8,
+      &quot;n_scaffolds&quot;: 4,
+      &quot;n_families&quot;: 2,
+      &quot;grouped_metrics&quot;: [
+        {
+          &quot;scheme&quot;: &quot;loso&quot;,
+          &quot;model&quot;: &quot;synthetic_baseline&quot;,
+          &quot;n_samples&quot;: 8,
+          &quot;mae_kcal_mol&quot;: 0.3,
+          &quot;mae_ci95&quot;: [
+            0.2,
+            0.4
+          ]
+        },
+        {
+          &quot;scheme&quot;: &quot;lofo&quot;,
+          &quot;model&quot;: &quot;synthetic_baseline&quot;,
+          &quot;n_samples&quot;: 8,
+          &quot;mae_kcal_mol&quot;: 0.5,
+          &quot;mae_ci95&quot;: [
+            0.4,
+            0.6
+          ]
+        }
+      ],
+      &quot;selected_alpha&quot;: 1,
+      &quot;scope&quot;: &quot;Synthetic grouped interpolation diagnostic for execution testing only.&quot;,
+      &quot;cross_scale_join&quot;: &quot;No scientific conclusions or cross-scale causal join from synthetic data.&quot;,
+      &quot;guardrail&quot;: &quot;Do not report this audit as a transferable design rule or causal evidence for a specific material.&quot;,
+      &quot;evidence_files&quot;: [
+        &quot;AI/metrics.csv&quot;,
+        &quot;AI/audit.json&quot;
+      ]
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details></section><section><h2>缺文件失败</h2><p>脱敏会话：demo-session-868de50c7df2</p><a href="real_agnes/failure-result.json">结构化记录</a><details><summary>evidence_inventory</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t0-28200a6fd5cb5944270a6f5b4e3e1269&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 16878,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t0-28200a6fd5cb5944270a6f5b4e3e1269&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;tool_version\&quot;:\&quot;0.2.0\&quot;,\&quot;config_version\&quot;:\&quot;1.0\&quot;,\&quot;status\&quot;:\&quot;evidence_needs_attention\&quot;,\&quot;dataset\&quot;:\&quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS\&quot;,\&quot;dataset_id\&quot;:\&quot;team-synthetic-agh-video-test-v1\&quot;,\&quot;raw_trajectories_included\&quot;:false,\&quot;pmf_conditions\&quot;:[\&quot;DEMO_A_c0\&quot;,\&quot;DEMO_A_c1\&quot;,\&quot;DEMO_A_c2\&quot;,\&quot;DEMO_B_c0\&quot;,\&quot;DEMO_B_c1\&quot;,\&quot;DEMO_B_c2\&quot;,\&quot;DEMO_C_c0\&quot;,\&quot;DEMO_C_c1\&quot;,\&quot;DEMO_C_c2\&quot;],\&quot;pmf_conditions_declared\&quot;:9,\&quot;md_comparisons\&quot;:[\&quot;DEMO_A-minus-DEMO_B\&quot;],\&quot;md_metrics\&quot;:[{\&quot;id\&quot;:\&quot;demo_contact_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;},{\&quot;id\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;}],\&quot;files_expected\&quot;:15,\&quot;files_present\&quot;:14,\&quot;missing_files\&quot;:[\&quot;AI/audit.json\&quot;],\&quot;invalid_files\&quot;:[],\&quot;claims_supported\&quot;:[\&quot;Synthetic input validation\&quot;,\&quot;Configured tool execution\&quot;,\&quot;Uncertainty and error handling\&quot;],\&quot;claims_blocked\&quot;:[\&quot;Any scientific inference from synthetic test values\&quot;,\&quot;Macroscopic phase separation\&quot;,\&quot;Causal mechanisms or transferable design rules\&quot;],\&quot;configuration_file\&quot;:\&quot;audit_config.json\&quot;,\&quot;provenance_file\&quot;:\&quot;provenance.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;tool_version&quot;: &quot;0.2.0&quot;,
+      &quot;config_version&quot;: &quot;1.0&quot;,
+      &quot;status&quot;: &quot;evidence_needs_attention&quot;,
+      &quot;dataset&quot;: &quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS&quot;,
+      &quot;dataset_id&quot;: &quot;team-synthetic-agh-video-test-v1&quot;,
+      &quot;raw_trajectories_included&quot;: false,
+      &quot;pmf_conditions&quot;: [
+        &quot;DEMO_A_c0&quot;,
+        &quot;DEMO_A_c1&quot;,
+        &quot;DEMO_A_c2&quot;,
+        &quot;DEMO_B_c0&quot;,
+        &quot;DEMO_B_c1&quot;,
+        &quot;DEMO_B_c2&quot;,
+        &quot;DEMO_C_c0&quot;,
+        &quot;DEMO_C_c1&quot;,
+        &quot;DEMO_C_c2&quot;
+      ],
+      &quot;pmf_conditions_declared&quot;: 9,
+      &quot;md_comparisons&quot;: [
+        &quot;DEMO_A-minus-DEMO_B&quot;
+      ],
+      &quot;md_metrics&quot;: [
+        {
+          &quot;id&quot;: &quot;demo_contact_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        },
+        {
+          &quot;id&quot;: &quot;demo_bridge_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        }
+      ],
+      &quot;files_expected&quot;: 15,
+      &quot;files_present&quot;: 14,
+      &quot;missing_files&quot;: [
+        &quot;AI/audit.json&quot;
+      ],
+      &quot;invalid_files&quot;: [],
+      &quot;claims_supported&quot;: [
+        &quot;Synthetic input validation&quot;,
+        &quot;Configured tool execution&quot;,
+        &quot;Uncertainty and error handling&quot;
+      ],
+      &quot;claims_blocked&quot;: [
+        &quot;Any scientific inference from synthetic test values&quot;,
+        &quot;Macroscopic phase separation&quot;,
+        &quot;Causal mechanisms or transferable design rules&quot;
+      ],
+      &quot;configuration_file&quot;: &quot;audit_config.json&quot;,
+      &quot;provenance_file&quot;: &quot;provenance.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t1-81aff84e091184524ef164da0588f92c&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 21044,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_A_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t1-81aff84e091184524ef164da0588f92c&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_A_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.2,\&quot;well_depth_ci95_kcal_mol\&quot;:[1,1.4],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_A_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_A_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.2,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1,
+        1.4
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_A_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t2-6e2e142946b9754cf9221dfbe3732a7a&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 21046,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_B_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t2-6e2e142946b9754cf9221dfbe3732a7a&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_B_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.4,\&quot;well_depth_ci95_kcal_mol\&quot;:[1.2,1.5999999999999999],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_B_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_B_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.4,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1.2,
+        1.5999999999999999
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_B_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t3-9077b0a57f08f9d5787bcbdc592f3ad6&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 23838,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_contact_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t3-9077b0a57f08f9d5787bcbdc592f3ad6&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_contact_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:-0.2,\&quot;ci95\&quot;:[-1,0.6],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_contact_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: -0.2,
+      &quot;ci95&quot;: [
+        -1,
+        0.6
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t4-ce620ce7097e2bad89c65027bf5319f6&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 23839,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_bridge_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t4-ce620ce7097e2bad89c65027bf5319f6&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:0,\&quot;ci95\&quot;:[-0.5,0.5],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_bridge_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: 0,
+      &quot;ci95&quot;: [
+        -0.5,
+        0.5
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_sapt_model</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t5-64424b65dba3e956dde50c7172bab395&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 32441,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t5-64424b65dba3e956dde50c7172bab395&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;EVIDENCE_FILE_MISSING: AI/audit.json&quot;
+      }
+    ],
+    &quot;isError&quot;: true,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details></section><section><h2>恢复：重新装载后新建会话</h2><p>脱敏会话：demo-session-8b85b83056fa</p><a href="real_agnes/recovery-result.json">结构化记录</a><details><summary>evidence_inventory</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t5-0422a213a9bca33b7880be32c1a56d4d&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 23779,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t5-0422a213a9bca33b7880be32c1a56d4d&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;tool_version\&quot;:\&quot;0.2.0\&quot;,\&quot;config_version\&quot;:\&quot;1.0\&quot;,\&quot;status\&quot;:\&quot;evidence_ready_for_configured_audits\&quot;,\&quot;dataset\&quot;:\&quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS\&quot;,\&quot;dataset_id\&quot;:\&quot;team-synthetic-agh-video-test-v1\&quot;,\&quot;raw_trajectories_included\&quot;:false,\&quot;pmf_conditions\&quot;:[\&quot;DEMO_A_c0\&quot;,\&quot;DEMO_A_c1\&quot;,\&quot;DEMO_A_c2\&quot;,\&quot;DEMO_B_c0\&quot;,\&quot;DEMO_B_c1\&quot;,\&quot;DEMO_B_c2\&quot;,\&quot;DEMO_C_c0\&quot;,\&quot;DEMO_C_c1\&quot;,\&quot;DEMO_C_c2\&quot;],\&quot;pmf_conditions_declared\&quot;:9,\&quot;md_comparisons\&quot;:[\&quot;DEMO_A-minus-DEMO_B\&quot;],\&quot;md_metrics\&quot;:[{\&quot;id\&quot;:\&quot;demo_contact_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;},{\&quot;id\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;}],\&quot;files_expected\&quot;:15,\&quot;files_present\&quot;:15,\&quot;missing_files\&quot;:[],\&quot;invalid_files\&quot;:[],\&quot;claims_supported\&quot;:[\&quot;Synthetic input validation\&quot;,\&quot;Configured tool execution\&quot;,\&quot;Uncertainty and error handling\&quot;],\&quot;claims_blocked\&quot;:[\&quot;Any scientific inference from synthetic test values\&quot;,\&quot;Macroscopic phase separation\&quot;,\&quot;Causal mechanisms or transferable design rules\&quot;],\&quot;configuration_file\&quot;:\&quot;audit_config.json\&quot;,\&quot;provenance_file\&quot;:\&quot;provenance.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;tool_version&quot;: &quot;0.2.0&quot;,
+      &quot;config_version&quot;: &quot;1.0&quot;,
+      &quot;status&quot;: &quot;evidence_ready_for_configured_audits&quot;,
+      &quot;dataset&quot;: &quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS&quot;,
+      &quot;dataset_id&quot;: &quot;team-synthetic-agh-video-test-v1&quot;,
+      &quot;raw_trajectories_included&quot;: false,
+      &quot;pmf_conditions&quot;: [
+        &quot;DEMO_A_c0&quot;,
+        &quot;DEMO_A_c1&quot;,
+        &quot;DEMO_A_c2&quot;,
+        &quot;DEMO_B_c0&quot;,
+        &quot;DEMO_B_c1&quot;,
+        &quot;DEMO_B_c2&quot;,
+        &quot;DEMO_C_c0&quot;,
+        &quot;DEMO_C_c1&quot;,
+        &quot;DEMO_C_c2&quot;
+      ],
+      &quot;pmf_conditions_declared&quot;: 9,
+      &quot;md_comparisons&quot;: [
+        &quot;DEMO_A-minus-DEMO_B&quot;
+      ],
+      &quot;md_metrics&quot;: [
+        {
+          &quot;id&quot;: &quot;demo_contact_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        },
+        {
+          &quot;id&quot;: &quot;demo_bridge_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        }
+      ],
+      &quot;files_expected&quot;: 15,
+      &quot;files_present&quot;: 15,
+      &quot;missing_files&quot;: [],
+      &quot;invalid_files&quot;: [],
+      &quot;claims_supported&quot;: [
+        &quot;Synthetic input validation&quot;,
+        &quot;Configured tool execution&quot;,
+        &quot;Uncertainty and error handling&quot;
+      ],
+      &quot;claims_blocked&quot;: [
+        &quot;Any scientific inference from synthetic test values&quot;,
+        &quot;Macroscopic phase separation&quot;,
+        &quot;Causal mechanisms or transferable design rules&quot;
+      ],
+      &quot;configuration_file&quot;: &quot;audit_config.json&quot;,
+      &quot;provenance_file&quot;: &quot;provenance.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t6-e02ad7a34cf3476a157c4f3cd6257f03&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 32737,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_A_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t6-e02ad7a34cf3476a157c4f3cd6257f03&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_A_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.2,\&quot;well_depth_ci95_kcal_mol\&quot;:[1,1.4],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_A_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_A_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.2,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1,
+        1.4
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_A_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t7-e0ee0cd31138a6c37b2da5499af3d787&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 32737,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_B_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t7-e0ee0cd31138a6c37b2da5499af3d787&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_B_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.4,\&quot;well_depth_ci95_kcal_mol\&quot;:[1.2,1.5999999999999999],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_B_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_B_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.4,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1.2,
+        1.5999999999999999
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_B_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t8-88c60ded9f9e46694d9aaf07c49f7bf1&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 37453,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_contact_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t8-88c60ded9f9e46694d9aaf07c49f7bf1&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_contact_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:-0.2,\&quot;ci95\&quot;:[-1,0.6],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_contact_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: -0.2,
+      &quot;ci95&quot;: [
+        -1,
+        0.6
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t9-ed89e5e8d21ffd8ee789630eb5cef338&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 37454,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_bridge_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t9-ed89e5e8d21ffd8ee789630eb5cef338&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:0,\&quot;ci95\&quot;:[-0.5,0.5],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_bridge_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: 0,
+      &quot;ci95&quot;: [
+        -0.5,
+        0.5
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_sapt_model</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t10-eee672ea4929be5b742693d3a55f5c93&quot;,
+  &quot;seq&quot;: null,
+  &quot;ts&quot;: null,
+  &quot;elapsed_ms&quot;: 38804,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t10-eee672ea4929be5b742693d3a55f5c93&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;status\&quot;:\&quot;interpolation_diagnostic_only\&quot;,\&quot;target\&quot;:\&quot;synthetic fixture target (kcal/mol)\&quot;,\&quot;n_unique_samples\&quot;:8,\&quot;n_scaffolds\&quot;:4,\&quot;n_families\&quot;:2,\&quot;grouped_metrics\&quot;:[{\&quot;scheme\&quot;:\&quot;loso\&quot;,\&quot;model\&quot;:\&quot;synthetic_baseline\&quot;,\&quot;n_samples\&quot;:8,\&quot;mae_kcal_mol\&quot;:0.3,\&quot;mae_ci95\&quot;:[0.2,0.4]},{\&quot;scheme\&quot;:\&quot;lofo\&quot;,\&quot;model\&quot;:\&quot;synthetic_baseline\&quot;,\&quot;n_samples\&quot;:8,\&quot;mae_kcal_mol\&quot;:0.5,\&quot;mae_ci95\&quot;:[0.4,0.6]}],\&quot;selected_alpha\&quot;:1,\&quot;scope\&quot;:\&quot;Synthetic grouped interpolation diagnostic for execution testing only.\&quot;,\&quot;cross_scale_join\&quot;:\&quot;No scientific conclusions or cross-scale causal join from synthetic data.\&quot;,\&quot;guardrail\&quot;:\&quot;Do not report this audit as a transferable design rule or causal evidence for a specific material.\&quot;,\&quot;evidence_files\&quot;:[\&quot;AI/metrics.csv\&quot;,\&quot;AI/audit.json\&quot;]}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;status&quot;: &quot;interpolation_diagnostic_only&quot;,
+      &quot;target&quot;: &quot;synthetic fixture target (kcal/mol)&quot;,
+      &quot;n_unique_samples&quot;: 8,
+      &quot;n_scaffolds&quot;: 4,
+      &quot;n_families&quot;: 2,
+      &quot;grouped_metrics&quot;: [
+        {
+          &quot;scheme&quot;: &quot;loso&quot;,
+          &quot;model&quot;: &quot;synthetic_baseline&quot;,
+          &quot;n_samples&quot;: 8,
+          &quot;mae_kcal_mol&quot;: 0.3,
+          &quot;mae_ci95&quot;: [
+            0.2,
+            0.4
+          ]
+        },
+        {
+          &quot;scheme&quot;: &quot;lofo&quot;,
+          &quot;model&quot;: &quot;synthetic_baseline&quot;,
+          &quot;n_samples&quot;: 8,
+          &quot;mae_kcal_mol&quot;: 0.5,
+          &quot;mae_ci95&quot;: [
+            0.4,
+            0.6
+          ]
+        }
+      ],
+      &quot;selected_alpha&quot;: 1,
+      &quot;scope&quot;: &quot;Synthetic grouped interpolation diagnostic for execution testing only.&quot;,
+      &quot;cross_scale_join&quot;: &quot;No scientific conclusions or cross-scale causal join from synthetic data.&quot;,
+      &quot;guardrail&quot;: &quot;Do not report this audit as a transferable design rule or causal evidence for a specific material.&quot;,
+      &quot;evidence_files&quot;: [
+        &quot;AI/metrics.csv&quot;,
+        &quot;AI/audit.json&quot;
+      ]
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details></section><section><h2>发行入口正常复跑</h2><p>脱敏会话：demo-session-defecfe4ca65</p><a href="release_real/agh-real-normal-result.json">结构化记录</a><details><summary>evidence_inventory</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t0-49ce2ec7222ed14c30cc608b115d319b&quot;,
+  &quot;seq&quot;: 18,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:12.629Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t0-49ce2ec7222ed14c30cc608b115d319b&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;tool_version\&quot;:\&quot;0.2.0\&quot;,\&quot;config_version\&quot;:\&quot;1.0\&quot;,\&quot;status\&quot;:\&quot;evidence_ready_for_configured_audits\&quot;,\&quot;dataset\&quot;:\&quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS\&quot;,\&quot;dataset_id\&quot;:\&quot;team-synthetic-agh-video-test-v1\&quot;,\&quot;raw_trajectories_included\&quot;:false,\&quot;pmf_conditions\&quot;:[\&quot;DEMO_A_c0\&quot;,\&quot;DEMO_A_c1\&quot;,\&quot;DEMO_A_c2\&quot;,\&quot;DEMO_B_c0\&quot;,\&quot;DEMO_B_c1\&quot;,\&quot;DEMO_B_c2\&quot;,\&quot;DEMO_C_c0\&quot;,\&quot;DEMO_C_c1\&quot;,\&quot;DEMO_C_c2\&quot;],\&quot;pmf_conditions_declared\&quot;:9,\&quot;md_comparisons\&quot;:[\&quot;DEMO_A-minus-DEMO_B\&quot;],\&quot;md_metrics\&quot;:[{\&quot;id\&quot;:\&quot;demo_contact_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;},{\&quot;id\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;}],\&quot;files_expected\&quot;:15,\&quot;files_present\&quot;:15,\&quot;missing_files\&quot;:[],\&quot;invalid_files\&quot;:[],\&quot;claims_supported\&quot;:[\&quot;Synthetic input validation\&quot;,\&quot;Configured tool execution\&quot;,\&quot;Uncertainty and error handling\&quot;],\&quot;claims_blocked\&quot;:[\&quot;Any scientific inference from synthetic test values\&quot;,\&quot;Macroscopic phase separation\&quot;,\&quot;Causal mechanisms or transferable design rules\&quot;],\&quot;configuration_file\&quot;:\&quot;audit_config.json\&quot;,\&quot;provenance_file\&quot;:\&quot;provenance.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;tool_version&quot;: &quot;0.2.0&quot;,
+      &quot;config_version&quot;: &quot;1.0&quot;,
+      &quot;status&quot;: &quot;evidence_ready_for_configured_audits&quot;,
+      &quot;dataset&quot;: &quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS&quot;,
+      &quot;dataset_id&quot;: &quot;team-synthetic-agh-video-test-v1&quot;,
+      &quot;raw_trajectories_included&quot;: false,
+      &quot;pmf_conditions&quot;: [
+        &quot;DEMO_A_c0&quot;,
+        &quot;DEMO_A_c1&quot;,
+        &quot;DEMO_A_c2&quot;,
+        &quot;DEMO_B_c0&quot;,
+        &quot;DEMO_B_c1&quot;,
+        &quot;DEMO_B_c2&quot;,
+        &quot;DEMO_C_c0&quot;,
+        &quot;DEMO_C_c1&quot;,
+        &quot;DEMO_C_c2&quot;
+      ],
+      &quot;pmf_conditions_declared&quot;: 9,
+      &quot;md_comparisons&quot;: [
+        &quot;DEMO_A-minus-DEMO_B&quot;
+      ],
+      &quot;md_metrics&quot;: [
+        {
+          &quot;id&quot;: &quot;demo_contact_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        },
+        {
+          &quot;id&quot;: &quot;demo_bridge_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        }
+      ],
+      &quot;files_expected&quot;: 15,
+      &quot;files_present&quot;: 15,
+      &quot;missing_files&quot;: [],
+      &quot;invalid_files&quot;: [],
+      &quot;claims_supported&quot;: [
+        &quot;Synthetic input validation&quot;,
+        &quot;Configured tool execution&quot;,
+        &quot;Uncertainty and error handling&quot;
+      ],
+      &quot;claims_blocked&quot;: [
+        &quot;Any scientific inference from synthetic test values&quot;,
+        &quot;Macroscopic phase separation&quot;,
+        &quot;Causal mechanisms or transferable design rules&quot;
+      ],
+      &quot;configuration_file&quot;: &quot;audit_config.json&quot;,
+      &quot;provenance_file&quot;: &quot;provenance.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t1-f626e90b513ce76ed21243dad9b3d4d0&quot;,
+  &quot;seq&quot;: 36,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:17.168Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_A_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t1-f626e90b513ce76ed21243dad9b3d4d0&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_A_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.2,\&quot;well_depth_ci95_kcal_mol\&quot;:[1,1.4],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_A_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_A_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.2,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1,
+        1.4
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_A_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t2-9ad2ea4b0804fae21c07a2361505a322&quot;,
+  &quot;seq&quot;: 37,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:17.168Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_B_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t2-9ad2ea4b0804fae21c07a2361505a322&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_B_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.4,\&quot;well_depth_ci95_kcal_mol\&quot;:[1.2,1.5999999999999999],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_B_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_B_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.4,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1.2,
+        1.5999999999999999
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_B_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t3-902d58dcfe91dd820ec8c95c13e92f59&quot;,
+  &quot;seq&quot;: 38,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:17.168Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_contact_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t3-902d58dcfe91dd820ec8c95c13e92f59&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_contact_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:-0.2,\&quot;ci95\&quot;:[-1,0.6],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_contact_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: -0.2,
+      &quot;ci95&quot;: [
+        -1,
+        0.6
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t4-b5df16afea2346015144566c265f1392&quot;,
+  &quot;seq&quot;: 39,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:17.168Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_bridge_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t4-b5df16afea2346015144566c265f1392&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:0,\&quot;ci95\&quot;:[-0.5,0.5],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_bridge_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: 0,
+      &quot;ci95&quot;: [
+        -0.5,
+        0.5
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_sapt_model</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t5-c8e9c4b0650ddd878e3846f19abdb3c1&quot;,
+  &quot;seq&quot;: 40,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:17.168Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t5-c8e9c4b0650ddd878e3846f19abdb3c1&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;status\&quot;:\&quot;interpolation_diagnostic_only\&quot;,\&quot;target\&quot;:\&quot;synthetic fixture target (kcal/mol)\&quot;,\&quot;n_unique_samples\&quot;:8,\&quot;n_scaffolds\&quot;:4,\&quot;n_families\&quot;:2,\&quot;grouped_metrics\&quot;:[{\&quot;scheme\&quot;:\&quot;loso\&quot;,\&quot;model\&quot;:\&quot;synthetic_baseline\&quot;,\&quot;n_samples\&quot;:8,\&quot;mae_kcal_mol\&quot;:0.3,\&quot;mae_ci95\&quot;:[0.2,0.4]},{\&quot;scheme\&quot;:\&quot;lofo\&quot;,\&quot;model\&quot;:\&quot;synthetic_baseline\&quot;,\&quot;n_samples\&quot;:8,\&quot;mae_kcal_mol\&quot;:0.5,\&quot;mae_ci95\&quot;:[0.4,0.6]}],\&quot;selected_alpha\&quot;:1,\&quot;scope\&quot;:\&quot;Synthetic grouped interpolation diagnostic for execution testing only.\&quot;,\&quot;cross_scale_join\&quot;:\&quot;No scientific conclusions or cross-scale causal join from synthetic data.\&quot;,\&quot;guardrail\&quot;:\&quot;Do not report this audit as a transferable design rule or causal evidence for a specific material.\&quot;,\&quot;evidence_files\&quot;:[\&quot;AI/metrics.csv\&quot;,\&quot;AI/audit.json\&quot;]}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;status&quot;: &quot;interpolation_diagnostic_only&quot;,
+      &quot;target&quot;: &quot;synthetic fixture target (kcal/mol)&quot;,
+      &quot;n_unique_samples&quot;: 8,
+      &quot;n_scaffolds&quot;: 4,
+      &quot;n_families&quot;: 2,
+      &quot;grouped_metrics&quot;: [
+        {
+          &quot;scheme&quot;: &quot;loso&quot;,
+          &quot;model&quot;: &quot;synthetic_baseline&quot;,
+          &quot;n_samples&quot;: 8,
+          &quot;mae_kcal_mol&quot;: 0.3,
+          &quot;mae_ci95&quot;: [
+            0.2,
+            0.4
+          ]
+        },
+        {
+          &quot;scheme&quot;: &quot;lofo&quot;,
+          &quot;model&quot;: &quot;synthetic_baseline&quot;,
+          &quot;n_samples&quot;: 8,
+          &quot;mae_kcal_mol&quot;: 0.5,
+          &quot;mae_ci95&quot;: [
+            0.4,
+            0.6
+          ]
+        }
+      ],
+      &quot;selected_alpha&quot;: 1,
+      &quot;scope&quot;: &quot;Synthetic grouped interpolation diagnostic for execution testing only.&quot;,
+      &quot;cross_scale_join&quot;: &quot;No scientific conclusions or cross-scale causal join from synthetic data.&quot;,
+      &quot;guardrail&quot;: &quot;Do not report this audit as a transferable design rule or causal evidence for a specific material.&quot;,
+      &quot;evidence_files&quot;: [
+        &quot;AI/metrics.csv&quot;,
+        &quot;AI/audit.json&quot;
+      ]
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details></section><section><h2>发行入口失败复跑</h2><p>脱敏会话：demo-session-97da6971e0c0</p><a href="release_real/agh-real-failure-result.json">结构化记录</a><details><summary>evidence_inventory</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t0-05c6bc46ca0a3d9dfe69ca4e52cf158a&quot;,
+  &quot;seq&quot;: 18,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:14.623Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t0-05c6bc46ca0a3d9dfe69ca4e52cf158a&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;tool_version\&quot;:\&quot;0.2.0\&quot;,\&quot;config_version\&quot;:\&quot;1.0\&quot;,\&quot;status\&quot;:\&quot;evidence_needs_attention\&quot;,\&quot;dataset\&quot;:\&quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS\&quot;,\&quot;dataset_id\&quot;:\&quot;team-synthetic-agh-video-test-v1\&quot;,\&quot;raw_trajectories_included\&quot;:false,\&quot;pmf_conditions\&quot;:[\&quot;DEMO_A_c0\&quot;,\&quot;DEMO_A_c1\&quot;,\&quot;DEMO_A_c2\&quot;,\&quot;DEMO_B_c0\&quot;,\&quot;DEMO_B_c1\&quot;,\&quot;DEMO_B_c2\&quot;,\&quot;DEMO_C_c0\&quot;,\&quot;DEMO_C_c1\&quot;,\&quot;DEMO_C_c2\&quot;],\&quot;pmf_conditions_declared\&quot;:9,\&quot;md_comparisons\&quot;:[\&quot;DEMO_A-minus-DEMO_B\&quot;],\&quot;md_metrics\&quot;:[{\&quot;id\&quot;:\&quot;demo_contact_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;},{\&quot;id\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;}],\&quot;files_expected\&quot;:15,\&quot;files_present\&quot;:14,\&quot;missing_files\&quot;:[\&quot;AI/audit.json\&quot;],\&quot;invalid_files\&quot;:[],\&quot;claims_supported\&quot;:[\&quot;Synthetic input validation\&quot;,\&quot;Configured tool execution\&quot;,\&quot;Uncertainty and error handling\&quot;],\&quot;claims_blocked\&quot;:[\&quot;Any scientific inference from synthetic test values\&quot;,\&quot;Macroscopic phase separation\&quot;,\&quot;Causal mechanisms or transferable design rules\&quot;],\&quot;configuration_file\&quot;:\&quot;audit_config.json\&quot;,\&quot;provenance_file\&quot;:\&quot;provenance.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;tool_version&quot;: &quot;0.2.0&quot;,
+      &quot;config_version&quot;: &quot;1.0&quot;,
+      &quot;status&quot;: &quot;evidence_needs_attention&quot;,
+      &quot;dataset&quot;: &quot;TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS&quot;,
+      &quot;dataset_id&quot;: &quot;team-synthetic-agh-video-test-v1&quot;,
+      &quot;raw_trajectories_included&quot;: false,
+      &quot;pmf_conditions&quot;: [
+        &quot;DEMO_A_c0&quot;,
+        &quot;DEMO_A_c1&quot;,
+        &quot;DEMO_A_c2&quot;,
+        &quot;DEMO_B_c0&quot;,
+        &quot;DEMO_B_c1&quot;,
+        &quot;DEMO_B_c2&quot;,
+        &quot;DEMO_C_c0&quot;,
+        &quot;DEMO_C_c1&quot;,
+        &quot;DEMO_C_c2&quot;
+      ],
+      &quot;pmf_conditions_declared&quot;: 9,
+      &quot;md_comparisons&quot;: [
+        &quot;DEMO_A-minus-DEMO_B&quot;
+      ],
+      &quot;md_metrics&quot;: [
+        {
+          &quot;id&quot;: &quot;demo_contact_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        },
+        {
+          &quot;id&quot;: &quot;demo_bridge_count&quot;,
+          &quot;unit&quot;: &quot;count&quot;
+        }
+      ],
+      &quot;files_expected&quot;: 15,
+      &quot;files_present&quot;: 14,
+      &quot;missing_files&quot;: [
+        &quot;AI/audit.json&quot;
+      ],
+      &quot;invalid_files&quot;: [],
+      &quot;claims_supported&quot;: [
+        &quot;Synthetic input validation&quot;,
+        &quot;Configured tool execution&quot;,
+        &quot;Uncertainty and error handling&quot;
+      ],
+      &quot;claims_blocked&quot;: [
+        &quot;Any scientific inference from synthetic test values&quot;,
+        &quot;Macroscopic phase separation&quot;,
+        &quot;Causal mechanisms or transferable design rules&quot;
+      ],
+      &quot;configuration_file&quot;: &quot;audit_config.json&quot;,
+      &quot;provenance_file&quot;: &quot;provenance.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t1-be9559c89333a3d70d3d74388ca24f2f&quot;,
+  &quot;seq&quot;: 36,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:20.603Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_A_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t1-be9559c89333a3d70d3d74388ca24f2f&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_A_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.2,\&quot;well_depth_ci95_kcal_mol\&quot;:[1,1.4],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_A_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_A_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.2,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1,
+        1.4
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_A_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_pmf_condition</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t2-600a1afc1f91062a7c71e5e6a7b74246&quot;,
+  &quot;seq&quot;: 37,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:20.603Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {
+    &quot;condition&quot;: &quot;DEMO_B_c1&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t2-600a1afc1f91062a7c71e5e6a7b74246&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;pmf_qc\&quot;,\&quot;condition\&quot;:\&quot;DEMO_B_c1\&quot;,\&quot;status\&quot;:\&quot;quality_gate_passed_with_scope_limits\&quot;,\&quot;well_depth_kcal_mol\&quot;:1.4,\&quot;well_depth_ci95_kcal_mol\&quot;:[1.2,1.5999999999999999],\&quot;bootstrap\&quot;:{\&quot;requested\&quot;:20,\&quot;valid\&quot;:20,\&quot;unit\&quot;:\&quot;synthetic test blocks\&quot;,\&quot;seed\&quot;:20261013},\&quot;window_overlap\&quot;:{\&quot;minimum\&quot;:0.1,\&quot;minimum_required\&quot;:0.03,\&quot;below_threshold\&quot;:[]},\&quot;standard_state_correction_applied\&quot;:false,\&quot;interpretation\&quot;:\&quot;local PMF QC is available; standard-state correction is not applied\&quot;,\&quot;evidence_file\&quot;:\&quot;PMF/DEMO_B_c1/summary.json\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;pmf_qc&quot;,
+      &quot;condition&quot;: &quot;DEMO_B_c1&quot;,
+      &quot;status&quot;: &quot;quality_gate_passed_with_scope_limits&quot;,
+      &quot;well_depth_kcal_mol&quot;: 1.4,
+      &quot;well_depth_ci95_kcal_mol&quot;: [
+        1.2,
+        1.5999999999999999
+      ],
+      &quot;bootstrap&quot;: {
+        &quot;requested&quot;: 20,
+        &quot;valid&quot;: 20,
+        &quot;unit&quot;: &quot;synthetic test blocks&quot;,
+        &quot;seed&quot;: 20261013
+      },
+      &quot;window_overlap&quot;: {
+        &quot;minimum&quot;: 0.1,
+        &quot;minimum_required&quot;: 0.03,
+        &quot;below_threshold&quot;: []
+      },
+      &quot;standard_state_correction_applied&quot;: false,
+      &quot;interpretation&quot;: &quot;local PMF QC is available; standard-state correction is not applied&quot;,
+      &quot;evidence_file&quot;: &quot;PMF/DEMO_B_c1/summary.json&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t3-ca99e4d5dd037e2085cfc9f1c1d39da3&quot;,
+  &quot;seq&quot;: 38,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:20.603Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_contact_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t3-ca99e4d5dd037e2085cfc9f1c1d39da3&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_contact_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:-0.2,\&quot;ci95\&quot;:[-1,0.6],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_contact_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: -0.2,
+      &quot;ci95&quot;: [
+        -1,
+        0.6
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>compare_md_replicas</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t4-30459e9a3a7df6306575add4d53d5a04&quot;,
+  &quot;seq&quot;: 39,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:20.603Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {
+    &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+    &quot;metric&quot;: &quot;demo_bridge_count&quot;
+  },
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t4-30459e9a3a7df6306575add4d53d5a04&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;{\&quot;step\&quot;:\&quot;md_replica_contrast\&quot;,\&quot;comparison\&quot;:\&quot;DEMO_A-minus-DEMO_B\&quot;,\&quot;metric\&quot;:\&quot;demo_bridge_count\&quot;,\&quot;n_independent_replicas_per_group\&quot;:3,\&quot;delta_mean\&quot;:0,\&quot;ci95\&quot;:[-0.5,0.5],\&quot;verdict\&quot;:\&quot;ci_crosses_zero_not_resolved\&quot;,\&quot;unit\&quot;:\&quot;count\&quot;,\&quot;evidence_file\&quot;:\&quot;MD/contrasts.csv\&quot;,\&quot;guardrail\&quot;:\&quot;A confidence interval crossing zero cannot support a directional mechanistic claim.\&quot;}&quot;
+      }
+    ],
+    &quot;structured&quot;: {
+      &quot;step&quot;: &quot;md_replica_contrast&quot;,
+      &quot;comparison&quot;: &quot;DEMO_A-minus-DEMO_B&quot;,
+      &quot;metric&quot;: &quot;demo_bridge_count&quot;,
+      &quot;n_independent_replicas_per_group&quot;: 3,
+      &quot;delta_mean&quot;: 0,
+      &quot;ci95&quot;: [
+        -0.5,
+        0.5
+      ],
+      &quot;verdict&quot;: &quot;ci_crosses_zero_not_resolved&quot;,
+      &quot;unit&quot;: &quot;count&quot;,
+      &quot;evidence_file&quot;: &quot;MD/contrasts.csv&quot;,
+      &quot;guardrail&quot;: &quot;A confidence interval crossing zero cannot support a directional mechanistic claim.&quot;
+    },
+    &quot;isError&quot;: false,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details><details><summary>audit_sapt_model</summary><pre>{
+  &quot;toolUseId&quot;: &quot;t5-cc05607c7f3e1b98728482ca96b582d4&quot;,
+  &quot;seq&quot;: 40,
+  &quot;ts&quot;: &quot;2026-10-13T12:44:20.603Z&quot;,
+  &quot;elapsed_ms&quot;: null,
+  &quot;args&quot;: {},
+  &quot;result&quot;: {
+    &quot;toolUseId&quot;: &quot;t5-cc05607c7f3e1b98728482ca96b582d4&quot;,
+    &quot;content&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;text&quot;: &quot;EVIDENCE_FILE_MISSING: AI/audit.json&quot;
+      }
+    ],
+    &quot;isError&quot;: true,
+    &quot;enforcement&quot;: {
+      &quot;level&quot;: &quot;partial&quot;,
+      &quot;scope&quot;: [
+        &quot;file&quot;
+      ]
+    },
+    &quot;authz&quot;: {
+      &quot;decisionId&quot;: &quot;n/a&quot;
+    }
+  }
+}</pre></details></section></html>

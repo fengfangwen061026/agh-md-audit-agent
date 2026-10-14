@@ -1,0 +1,475 @@
+{
+  "date": "2026-10-13",
+  "mode": "failure",
+  "data_origin": "team-authored synthetic data; no research evidence sent",
+  "provider": "agnes-ai",
+  "model": "agnes-3.0-flash",
+  "api_key": "omitted",
+  "workspace": "PUBLIC_WORKSPACE/视频录制工作区/全流程测试_2026-10-13/failure",
+  "agh_home": "PUBLIC_TEMP_HOME/failure",
+  "session_id": "demo-session-868de50c7df2",
+  "package": {
+    "id": "@demo/agh-scientific-audit",
+    "blockers": [],
+    "actual": "running",
+    "recorded_snapshot_integrity": "sha256-e0ce554e5e5bfe9d2ddc58b2ae0f78efe2fdc65d62b1ce50dcf648a7db737f2b"
+  },
+  "elapsed_seconds": 58.21,
+  "tool_calls": [
+    "evidence_inventory",
+    "audit_pmf_condition",
+    "audit_pmf_condition",
+    "compare_md_replicas",
+    "compare_md_replicas",
+    "audit_sapt_model"
+  ],
+  "scientific_calls": [
+    "evidence_inventory",
+    "audit_pmf_condition",
+    "audit_pmf_condition",
+    "compare_md_replicas",
+    "compare_md_replicas",
+    "audit_sapt_model"
+  ],
+  "checks": {
+    "real_agnes_verified": true,
+    "package_running": true,
+    "skill_read": false,
+    "scientific_sequence": true,
+    "inventory": true,
+    "two_pmf_scoped": true,
+    "two_md_cross_zero": true,
+    "sapt": true,
+    "turn_complete": true,
+    "substantive_answer": true,
+    "synthetic_disclosure": true,
+    "correction_limit_in_answer": true,
+    "uncertainty_in_answer": true,
+    "failure_in_answer": true
+  },
+  "turn": {
+    "stopReason": "end_turn",
+    "reason": "completed",
+    "lastSeq": 105
+  },
+  "final_answer_chars": 1979,
+  "events": [
+    {
+      "type": "tool/call",
+      "elapsed_ms": 16878,
+      "data": {
+        "toolUseId": "t0-28200a6fd5cb5944270a6f5b4e3e1269",
+        "name": "evidence_inventory",
+        "args": {},
+        "ordinal": 0,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "cdcdf654a2d4cdf00ded1899f056ef75c0e2419bcde32a767cebcfa82c64e2da",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 16890,
+      "data": {
+        "toolUseId": "t0-28200a6fd5cb5944270a6f5b4e3e1269",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"tool_version\":\"0.2.0\",\"config_version\":\"1.0\",\"status\":\"evidence_needs_attention\",\"dataset\":\"TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS\",\"dataset_id\":\"team-synthetic-agh-video-test-v1\",\"raw_trajectories_included\":false,\"pmf_conditions\":[\"DEMO_A_c0\",\"DEMO_A_c1\",\"DEMO_A_c2\",\"DEMO_B_c0\",\"DEMO_B_c1\",\"DEMO_B_c2\",\"DEMO_C_c0\",\"DEMO_C_c1\",\"DEMO_C_c2\"],\"pmf_conditions_declared\":9,\"md_comparisons\":[\"DEMO_A-minus-DEMO_B\"],\"md_metrics\":[{\"id\":\"demo_contact_count\",\"unit\":\"count\"},{\"id\":\"demo_bridge_count\",\"unit\":\"count\"}],\"files_expected\":15,\"files_present\":14,\"missing_files\":[\"AI/audit.json\"],\"invalid_files\":[],\"claims_supported\":[\"Synthetic input validation\",\"Configured tool execution\",\"Uncertainty and error handling\"],\"claims_blocked\":[\"Any scientific inference from synthetic test values\",\"Macroscopic phase separation\",\"Causal mechanisms or transferable design rules\"],\"configuration_file\":\"audit_config.json\",\"provenance_file\":\"provenance.json\"}"
+          }
+        ],
+        "structured": {
+          "tool_version": "0.2.0",
+          "config_version": "1.0",
+          "status": "evidence_needs_attention",
+          "dataset": "TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS",
+          "dataset_id": "team-synthetic-agh-video-test-v1",
+          "raw_trajectories_included": false,
+          "pmf_conditions": [
+            "DEMO_A_c0",
+            "DEMO_A_c1",
+            "DEMO_A_c2",
+            "DEMO_B_c0",
+            "DEMO_B_c1",
+            "DEMO_B_c2",
+            "DEMO_C_c0",
+            "DEMO_C_c1",
+            "DEMO_C_c2"
+          ],
+          "pmf_conditions_declared": 9,
+          "md_comparisons": [
+            "DEMO_A-minus-DEMO_B"
+          ],
+          "md_metrics": [
+            {
+              "id": "demo_contact_count",
+              "unit": "count"
+            },
+            {
+              "id": "demo_bridge_count",
+              "unit": "count"
+            }
+          ],
+          "files_expected": 15,
+          "files_present": 14,
+          "missing_files": [
+            "AI/audit.json"
+          ],
+          "invalid_files": [],
+          "claims_supported": [
+            "Synthetic input validation",
+            "Configured tool execution",
+            "Uncertainty and error handling"
+          ],
+          "claims_blocked": [
+            "Any scientific inference from synthetic test values",
+            "Macroscopic phase separation",
+            "Causal mechanisms or transferable design rules"
+          ],
+          "configuration_file": "audit_config.json",
+          "provenance_file": "provenance.json"
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 21044,
+      "data": {
+        "toolUseId": "t1-81aff84e091184524ef164da0588f92c",
+        "name": "audit_pmf_condition",
+        "args": {
+          "condition": "DEMO_A_c1"
+        },
+        "ordinal": 1,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "de956bf0594b5c2d7729e1f2978aed5ed2aafae4108c5ac0eac64ff9fa3d9e94",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 21046,
+      "data": {
+        "toolUseId": "t2-6e2e142946b9754cf9221dfbe3732a7a",
+        "name": "audit_pmf_condition",
+        "args": {
+          "condition": "DEMO_B_c1"
+        },
+        "ordinal": 2,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "de956bf0594b5c2d7729e1f2978aed5ed2aafae4108c5ac0eac64ff9fa3d9e94",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 21056,
+      "data": {
+        "toolUseId": "t1-81aff84e091184524ef164da0588f92c",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"step\":\"pmf_qc\",\"condition\":\"DEMO_A_c1\",\"status\":\"quality_gate_passed_with_scope_limits\",\"well_depth_kcal_mol\":1.2,\"well_depth_ci95_kcal_mol\":[1,1.4],\"bootstrap\":{\"requested\":20,\"valid\":20,\"unit\":\"synthetic test blocks\",\"seed\":20261013},\"window_overlap\":{\"minimum\":0.1,\"minimum_required\":0.03,\"below_threshold\":[]},\"standard_state_correction_applied\":false,\"interpretation\":\"local PMF QC is available; standard-state correction is not applied\",\"evidence_file\":\"PMF/DEMO_A_c1/summary.json\"}"
+          }
+        ],
+        "structured": {
+          "step": "pmf_qc",
+          "condition": "DEMO_A_c1",
+          "status": "quality_gate_passed_with_scope_limits",
+          "well_depth_kcal_mol": 1.2,
+          "well_depth_ci95_kcal_mol": [
+            1,
+            1.4
+          ],
+          "bootstrap": {
+            "requested": 20,
+            "valid": 20,
+            "unit": "synthetic test blocks",
+            "seed": 20261013
+          },
+          "window_overlap": {
+            "minimum": 0.1,
+            "minimum_required": 0.03,
+            "below_threshold": []
+          },
+          "standard_state_correction_applied": false,
+          "interpretation": "local PMF QC is available; standard-state correction is not applied",
+          "evidence_file": "PMF/DEMO_A_c1/summary.json"
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 21057,
+      "data": {
+        "toolUseId": "t2-6e2e142946b9754cf9221dfbe3732a7a",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"step\":\"pmf_qc\",\"condition\":\"DEMO_B_c1\",\"status\":\"quality_gate_passed_with_scope_limits\",\"well_depth_kcal_mol\":1.4,\"well_depth_ci95_kcal_mol\":[1.2,1.5999999999999999],\"bootstrap\":{\"requested\":20,\"valid\":20,\"unit\":\"synthetic test blocks\",\"seed\":20261013},\"window_overlap\":{\"minimum\":0.1,\"minimum_required\":0.03,\"below_threshold\":[]},\"standard_state_correction_applied\":false,\"interpretation\":\"local PMF QC is available; standard-state correction is not applied\",\"evidence_file\":\"PMF/DEMO_B_c1/summary.json\"}"
+          }
+        ],
+        "structured": {
+          "step": "pmf_qc",
+          "condition": "DEMO_B_c1",
+          "status": "quality_gate_passed_with_scope_limits",
+          "well_depth_kcal_mol": 1.4,
+          "well_depth_ci95_kcal_mol": [
+            1.2,
+            1.5999999999999999
+          ],
+          "bootstrap": {
+            "requested": 20,
+            "valid": 20,
+            "unit": "synthetic test blocks",
+            "seed": 20261013
+          },
+          "window_overlap": {
+            "minimum": 0.1,
+            "minimum_required": 0.03,
+            "below_threshold": []
+          },
+          "standard_state_correction_applied": false,
+          "interpretation": "local PMF QC is available; standard-state correction is not applied",
+          "evidence_file": "PMF/DEMO_B_c1/summary.json"
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 23838,
+      "data": {
+        "toolUseId": "t3-9077b0a57f08f9d5787bcbdc592f3ad6",
+        "name": "compare_md_replicas",
+        "args": {
+          "comparison": "DEMO_A-minus-DEMO_B",
+          "metric": "demo_contact_count"
+        },
+        "ordinal": 3,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "a506a51a20740b84fd8590655f1092832ad86c9eb8cd8d83c4e06ea766b71170",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 23839,
+      "data": {
+        "toolUseId": "t4-ce620ce7097e2bad89c65027bf5319f6",
+        "name": "compare_md_replicas",
+        "args": {
+          "comparison": "DEMO_A-minus-DEMO_B",
+          "metric": "demo_bridge_count"
+        },
+        "ordinal": 4,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "a506a51a20740b84fd8590655f1092832ad86c9eb8cd8d83c4e06ea766b71170",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 23847,
+      "data": {
+        "toolUseId": "t4-ce620ce7097e2bad89c65027bf5319f6",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"step\":\"md_replica_contrast\",\"comparison\":\"DEMO_A-minus-DEMO_B\",\"metric\":\"demo_bridge_count\",\"n_independent_replicas_per_group\":3,\"delta_mean\":0,\"ci95\":[-0.5,0.5],\"verdict\":\"ci_crosses_zero_not_resolved\",\"unit\":\"count\",\"evidence_file\":\"MD/contrasts.csv\",\"guardrail\":\"A confidence interval crossing zero cannot support a directional mechanistic claim.\"}"
+          }
+        ],
+        "structured": {
+          "step": "md_replica_contrast",
+          "comparison": "DEMO_A-minus-DEMO_B",
+          "metric": "demo_bridge_count",
+          "n_independent_replicas_per_group": 3,
+          "delta_mean": 0,
+          "ci95": [
+            -0.5,
+            0.5
+          ],
+          "verdict": "ci_crosses_zero_not_resolved",
+          "unit": "count",
+          "evidence_file": "MD/contrasts.csv",
+          "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 23848,
+      "data": {
+        "toolUseId": "t3-9077b0a57f08f9d5787bcbdc592f3ad6",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"step\":\"md_replica_contrast\",\"comparison\":\"DEMO_A-minus-DEMO_B\",\"metric\":\"demo_contact_count\",\"n_independent_replicas_per_group\":3,\"delta_mean\":-0.2,\"ci95\":[-1,0.6],\"verdict\":\"ci_crosses_zero_not_resolved\",\"unit\":\"count\",\"evidence_file\":\"MD/contrasts.csv\",\"guardrail\":\"A confidence interval crossing zero cannot support a directional mechanistic claim.\"}"
+          }
+        ],
+        "structured": {
+          "step": "md_replica_contrast",
+          "comparison": "DEMO_A-minus-DEMO_B",
+          "metric": "demo_contact_count",
+          "n_independent_replicas_per_group": 3,
+          "delta_mean": -0.2,
+          "ci95": [
+            -1,
+            0.6
+          ],
+          "verdict": "ci_crosses_zero_not_resolved",
+          "unit": "count",
+          "evidence_file": "MD/contrasts.csv",
+          "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+        },
+        "isError": false,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    },
+    {
+      "type": "tool/call",
+      "elapsed_ms": 32441,
+      "data": {
+        "toolUseId": "t5-64424b65dba3e956dde50c7172bab395",
+        "name": "audit_sapt_model",
+        "args": {},
+        "ordinal": 5,
+        "resolvedPolicy": {
+          "isReadOnly": true,
+          "isDestructive": false,
+          "isConcurrencySafe": true,
+          "isOpenWorld": false,
+          "replay": "safe",
+          "requiresApproval": "never",
+          "approvalScopes": [],
+          "policyVersion": "static-v1"
+        },
+        "policyHash": "2440d18ddde5694e1a0e604fdf1d3b640a264a87334416a7073bbce13e310b9a",
+        "definitionFingerprint": "977c31cf668eac8bf9bb4fb374c6d44712ed5e191aba012982c9f9dea7717378",
+        "executionDomain": "workspace"
+      }
+    },
+    {
+      "type": "tool/result",
+      "elapsed_ms": 32449,
+      "data": {
+        "toolUseId": "t5-64424b65dba3e956dde50c7172bab395",
+        "content": [
+          {
+            "type": "text",
+            "text": "EVIDENCE_FILE_MISSING: AI/audit.json"
+          }
+        ],
+        "isError": true,
+        "enforcement": {
+          "level": "partial",
+          "scope": [
+            "file"
+          ]
+        },
+        "authz": {
+          "decisionId": "n/a"
+        }
+      }
+    }
+  ],
+  "public_redaction_applied": true,
+  "public_answer_sha256": "7012cefdc1c40788e671e9c1f60bdb50f46222c7e50762ca385ceb00fd7b67e1"
+}

@@ -1,0 +1,342 @@
+{
+  "schema_version": "1.3",
+  "normal": [
+    {
+      "ok": true,
+      "name": "evidence_inventory",
+      "tool_version": "0.2.0",
+      "config_version": "1.0",
+      "status": "evidence_ready_for_configured_audits",
+      "dataset": "TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS",
+      "dataset_id": "team-synthetic-agh-video-test-v1",
+      "raw_trajectories_included": false,
+      "pmf_conditions": [
+        "DEMO_A_c0",
+        "DEMO_A_c1",
+        "DEMO_A_c2",
+        "DEMO_B_c0",
+        "DEMO_B_c1",
+        "DEMO_B_c2",
+        "DEMO_C_c0",
+        "DEMO_C_c1",
+        "DEMO_C_c2"
+      ],
+      "pmf_conditions_declared": 9,
+      "md_comparisons": [
+        "DEMO_A-minus-DEMO_B"
+      ],
+      "md_metrics": [
+        {
+          "id": "demo_contact_count",
+          "unit": "count"
+        },
+        {
+          "id": "demo_bridge_count",
+          "unit": "count"
+        }
+      ],
+      "files_expected": 15,
+      "files_present": 15,
+      "missing_files": [],
+      "invalid_files": [],
+      "claims_supported": [
+        "Synthetic input validation",
+        "Configured tool execution",
+        "Uncertainty and error handling"
+      ],
+      "claims_blocked": [
+        "Any scientific inference from synthetic test values",
+        "Macroscopic phase separation",
+        "Causal mechanisms or transferable design rules"
+      ],
+      "configuration_file": "audit_config.json",
+      "provenance_file": "provenance.json"
+    },
+    {
+      "ok": true,
+      "name": "audit_pmf_condition",
+      "step": "pmf_qc",
+      "condition": "DEMO_A_c1",
+      "status": "quality_gate_passed_with_scope_limits",
+      "well_depth_kcal_mol": 1.2,
+      "well_depth_ci95_kcal_mol": [
+        1,
+        1.4
+      ],
+      "bootstrap": {
+        "requested": 20,
+        "valid": 20,
+        "unit": "synthetic test blocks",
+        "seed": 20261013
+      },
+      "window_overlap": {
+        "minimum": 0.1,
+        "minimum_required": 0.03,
+        "below_threshold": []
+      },
+      "standard_state_correction_applied": false,
+      "interpretation": "local PMF QC is available; standard-state correction is not applied",
+      "evidence_file": "PMF/DEMO_A_c1/summary.json"
+    },
+    {
+      "ok": true,
+      "name": "audit_pmf_condition",
+      "step": "pmf_qc",
+      "condition": "DEMO_B_c1",
+      "status": "quality_gate_passed_with_scope_limits",
+      "well_depth_kcal_mol": 1.4,
+      "well_depth_ci95_kcal_mol": [
+        1.2,
+        1.5999999999999999
+      ],
+      "bootstrap": {
+        "requested": 20,
+        "valid": 20,
+        "unit": "synthetic test blocks",
+        "seed": 20261013
+      },
+      "window_overlap": {
+        "minimum": 0.1,
+        "minimum_required": 0.03,
+        "below_threshold": []
+      },
+      "standard_state_correction_applied": false,
+      "interpretation": "local PMF QC is available; standard-state correction is not applied",
+      "evidence_file": "PMF/DEMO_B_c1/summary.json"
+    },
+    {
+      "ok": true,
+      "name": "compare_md_replicas",
+      "step": "md_replica_contrast",
+      "comparison": "DEMO_A-minus-DEMO_B",
+      "metric": "demo_contact_count",
+      "n_independent_replicas_per_group": 3,
+      "delta_mean": -0.2,
+      "ci95": [
+        -1,
+        0.6
+      ],
+      "verdict": "ci_crosses_zero_not_resolved",
+      "unit": "count",
+      "evidence_file": "MD/contrasts.csv",
+      "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+    },
+    {
+      "ok": true,
+      "name": "audit_sapt_model",
+      "status": "interpolation_diagnostic_only",
+      "target": "synthetic fixture target (kcal/mol)",
+      "n_unique_samples": 8,
+      "n_scaffolds": 4,
+      "n_families": 2,
+      "grouped_metrics": [
+        {
+          "scheme": "loso",
+          "model": "synthetic_baseline",
+          "n_samples": 8,
+          "mae_kcal_mol": 0.3,
+          "mae_ci95": [
+            0.2,
+            0.4
+          ]
+        },
+        {
+          "scheme": "lofo",
+          "model": "synthetic_baseline",
+          "n_samples": 8,
+          "mae_kcal_mol": 0.5,
+          "mae_ci95": [
+            0.4,
+            0.6
+          ]
+        }
+      ],
+      "selected_alpha": 1,
+      "scope": "Synthetic grouped interpolation diagnostic for execution testing only.",
+      "cross_scale_join": "No scientific conclusions or cross-scale causal join from synthetic data.",
+      "guardrail": "Do not report this audit as a transferable design rule or causal evidence for a specific material.",
+      "evidence_files": [
+        "AI/metrics.csv",
+        "AI/audit.json"
+      ]
+    }
+  ],
+  "boundary": {
+    "ok": true,
+    "name": "compare_md_replicas",
+    "step": "md_replica_contrast",
+    "comparison": "DEMO_A-minus-DEMO_B",
+    "metric": "demo_bridge_count",
+    "n_independent_replicas_per_group": 3,
+    "delta_mean": 0,
+    "ci95": [
+      -0.5,
+      0.5
+    ],
+    "verdict": "ci_crosses_zero_not_resolved",
+    "unit": "count",
+    "evidence_file": "MD/contrasts.csv",
+    "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+  },
+  "failure": {
+    "ok": false,
+    "name": "audit_sapt_model",
+    "error": "EVIDENCE_FILE_MISSING: AI/audit.json"
+  },
+  "invalidCsv": {
+    "ok": false,
+    "name": "audit_sapt_model",
+    "error": "EVIDENCE_FILE_INVALID: unterminated CSV quote"
+  },
+  "invalidJson": {
+    "ok": false,
+    "name": "audit_sapt_model",
+    "error": "EVIDENCE_FILE_INVALID: AI/audit.json"
+  },
+  "invalidValue": {
+    "ok": false,
+    "name": "compare_md_replicas",
+    "error": "EVIDENCE_VALUE_INVALID: DEMO_A-minus-DEMO_B/demo_contact_count.replica_qc"
+  },
+  "invalidCi": {
+    "ok": false,
+    "name": "compare_md_replicas",
+    "error": "EVIDENCE_VALUE_INVALID: DEMO_A-minus-DEMO_B/demo_contact_count.replica_qc"
+  },
+  "unsupportedCondition": {
+    "ok": false,
+    "name": "audit_pmf_condition",
+    "error": "EVIDENCE_CONDITION_UNSUPPORTED: UNKNOWN_0M"
+  },
+  "unsupportedMetric": {
+    "ok": false,
+    "name": "compare_md_replicas",
+    "error": "EVIDENCE_METRIC_UNSUPPORTED: unconfigured_metric"
+  },
+  "inventoryMissing": {
+    "ok": true,
+    "name": "evidence_inventory",
+    "tool_version": "0.2.0",
+    "config_version": "1.0",
+    "status": "evidence_needs_attention",
+    "dataset": "TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS",
+    "dataset_id": "team-synthetic-agh-video-test-v1",
+    "raw_trajectories_included": false,
+    "pmf_conditions": [
+      "DEMO_A_c0",
+      "DEMO_A_c1",
+      "DEMO_A_c2",
+      "DEMO_B_c0",
+      "DEMO_B_c1",
+      "DEMO_B_c2",
+      "DEMO_C_c0",
+      "DEMO_C_c1",
+      "DEMO_C_c2"
+    ],
+    "pmf_conditions_declared": 9,
+    "md_comparisons": [
+      "DEMO_A-minus-DEMO_B"
+    ],
+    "md_metrics": [
+      {
+        "id": "demo_contact_count",
+        "unit": "count"
+      },
+      {
+        "id": "demo_bridge_count",
+        "unit": "count"
+      }
+    ],
+    "files_expected": 15,
+    "files_present": 14,
+    "missing_files": [
+      "AI/audit.json"
+    ],
+    "invalid_files": [],
+    "claims_supported": [
+      "Synthetic input validation",
+      "Configured tool execution",
+      "Uncertainty and error handling"
+    ],
+    "claims_blocked": [
+      "Any scientific inference from synthetic test values",
+      "Macroscopic phase separation",
+      "Causal mechanisms or transferable design rules"
+    ],
+    "configuration_file": "audit_config.json",
+    "provenance_file": "provenance.json"
+  },
+  "inventoryInvalidCsv": {
+    "ok": true,
+    "name": "evidence_inventory",
+    "tool_version": "0.2.0",
+    "config_version": "1.0",
+    "status": "evidence_needs_attention",
+    "dataset": "TEAM SYNTHETIC TEST DATA - NOT RESEARCH RESULTS",
+    "dataset_id": "team-synthetic-agh-video-test-v1",
+    "raw_trajectories_included": false,
+    "pmf_conditions": [
+      "DEMO_A_c0",
+      "DEMO_A_c1",
+      "DEMO_A_c2",
+      "DEMO_B_c0",
+      "DEMO_B_c1",
+      "DEMO_B_c2",
+      "DEMO_C_c0",
+      "DEMO_C_c1",
+      "DEMO_C_c2"
+    ],
+    "pmf_conditions_declared": 9,
+    "md_comparisons": [
+      "DEMO_A-minus-DEMO_B"
+    ],
+    "md_metrics": [
+      {
+        "id": "demo_contact_count",
+        "unit": "count"
+      },
+      {
+        "id": "demo_bridge_count",
+        "unit": "count"
+      }
+    ],
+    "files_expected": 15,
+    "files_present": 15,
+    "missing_files": [],
+    "invalid_files": [
+      {
+        "file": "AI/metrics.csv",
+        "error": "EVIDENCE_FILE_INVALID: unterminated CSV quote"
+      }
+    ],
+    "claims_supported": [
+      "Synthetic input validation",
+      "Configured tool execution",
+      "Uncertainty and error handling"
+    ],
+    "claims_blocked": [
+      "Any scientific inference from synthetic test values",
+      "Macroscopic phase separation",
+      "Causal mechanisms or transferable design rules"
+    ],
+    "configuration_file": "audit_config.json",
+    "provenance_file": "provenance.json"
+  },
+  "configuredCustomMd": {
+    "ok": true,
+    "name": "compare_md_replicas",
+    "step": "md_replica_contrast",
+    "comparison": "custom-control",
+    "metric": "custom-contact",
+    "n_independent_replicas_per_group": 3,
+    "delta_mean": 1.5,
+    "ci95": [
+      0.5,
+      2.5
+    ],
+    "verdict": "positive_difference_resolved",
+    "unit": "count",
+    "evidence_file": "MD/contrasts.csv",
+    "guardrail": "A confidence interval crossing zero cannot support a directional mechanistic claim."
+  }
+}
